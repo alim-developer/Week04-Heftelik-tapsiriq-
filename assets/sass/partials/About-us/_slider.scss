@@ -1,0 +1,32 @@
+
+
+
+
+#slider{
+
+	margin-top: -20px;
+
+	.row {
+		height: 310px;
+		background-image: url(../images/slider.jpg);
+		background-size: cover;
+
+
+		h1 {
+			font-size: 48px;
+			color: $colorWhite; 
+			font-weight: 700;
+			text-transform: $upper;
+			padding-top: 90px;
+			margin-bottom: 0px;
+			
+
+		}
+		h4{
+			font-size: $font-size;
+			margin-bottom: 0px;
+			padding-top:0;
+			@extend h1;
+		}
+	}
+}
