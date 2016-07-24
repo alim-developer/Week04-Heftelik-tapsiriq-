@@ -1,0 +1,169 @@
+
+
+#footer{
+	position: relative;
+
+	.container{
+		padding: 95px 0;
+		border-bottom: 2px solid lighten($colorGray, 30%);
+		
+		.menu{
+			ul {
+				padding: 0px;
+				li{
+					list-style:none;
+					line-height: 25px;
+					text-transform: $upper;
+					a{	
+						display: block;
+						padding: 2px 10px;
+						text-decoration: none;
+						color:$colorGray;
+						border-radius: 15px;
+						font-size: $font-size;
+						&:hover{ 
+							background: $colorBlue;
+							color: $colorWhite;
+						}
+
+						span{
+							color: $colorBlack;
+							font-size: $font-size +4;
+							text-transform: none;
+						}
+					}
+
+					i{	
+
+						color: $colorGray;
+
+						&:first-child{
+							margin-left: 10px;
+						}
+
+						&:hover {
+							color: darken($colorGray, 30%);
+						}
+					}
+				}
+			}
+			.g{
+				margin-top: 30px;
+			}
+		}
+
+		.contact{
+			ul {
+				padding: 0px;
+				li{
+					list-style:none;
+					line-height: 29px;
+					text-transform: $upper;
+					color: $colorGray;
+					font-size: $font-size;
+					span{
+						color: $colorBlack;
+					}
+
+					.cont{
+						font-size: $font-size +4;
+						text-transform: none;
+					}
+				}
+			}
+		}
+
+
+		.newsLetter{
+
+			ul {
+				padding: 0px;
+				li{
+					list-style:none;
+					line-height: 29px;
+					color: $colorBlack;
+					font-size: $font-size +4;
+
+					&:nth-child(2){
+						text-transform: $upper;
+						color: $colorGray;
+						font-size: $font-size;
+						margin-bottom: 5px;
+					}
+				}
+
+
+				.search{
+					width: 262px;
+					height: 42px;
+					background-color: $colorWhite;
+					input{
+						width: 220px;
+						height: 42px;
+						background: transparent;
+						font-size: 12px;
+						text-indent: 15px;
+						border: 1px solid $colorBlue;
+						text-transform: $upper;
+						
+
+					}
+
+					button{
+						width: 42px;
+						height: 42px;
+						float: right;
+						background-color: $colorBlue;
+						border: none;
+						color: $colorWhite;
+					}
+				}
+			}
+		}
+	}
+
+
+	.bord{
+		width: 0px;
+		height: 0px;
+		border-top:160px solid transparent;
+		border-bottom: 160px solid $colorOrange;
+		border-left: 220px solid $colorOrange;
+		border-right: 220px solid transparent;
+	
+		position: absolute; 
+		bottom: 0;
+		left:0;
+	}
+}
+
+
+
+
+
+#copyRight{
+	position: relative;
+	.container{
+		p{
+			color: $colorGray;
+			font-size: $font-size;
+			text-transform: $upper;
+			margin-top: 15px;
+			margin-bottom: 45px;
+		}
+	}
+
+	.bord2{
+		width: 0px;
+		height: 0px;
+		border-top:160px solid transparent;
+		border-bottom: 160px solid $colorBlue;
+		border-left: 220px solid transparent;
+		border-right: 220px solid $colorBlue;
+	
+		position: absolute; 
+		bottom: 0;
+		right:0;
+	}
+
+}
