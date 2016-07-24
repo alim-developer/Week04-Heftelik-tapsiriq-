@@ -5,28 +5,32 @@
 #slider{
 
 	margin-top: -20px;
-
-	.row {
+	
+	.container-fluid{
 		height: 310px;
 		background-image: url(../images/slider.jpg);
 		background-size: cover;
+		padding-top: 90px;
+	
+		.row {
 
+			h1 {
+				font-size: 48px;
+				color: $colorWhite; 
+				font-weight: 700;
+				text-transform: $upper;
+				
+				margin-bottom: 0px;
+				
 
-		h1 {
-			font-size: 48px;
-			color: $colorWhite; 
-			font-weight: 700;
-			text-transform: $upper;
-			padding-top: 90px;
-			margin-bottom: 0px;
-			
+			}
 
-		}
-		h4{
-			font-size: $font-size;
-			margin-bottom: 0px;
-			padding-top:0;
-			@extend h1;
+			h4{
+				font-size: $font-size;
+				margin-bottom: 0px;
+				padding-top:0;
+				@extend h1;
+			}
 		}
 	}
 }

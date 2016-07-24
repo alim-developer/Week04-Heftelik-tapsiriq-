@@ -4,11 +4,22 @@ $colorBlack: #23282f;
 $colorGray: #93a1a7;
 $colorWhite: #fff;
 $backgroundColorBlue: #e5eef0;
-$backgroundColorGray: #e5eef0;
+$backgroundColorGray: #8d8d8d;
 $upper: uppercase;
 $font-size: 14px;
 
 
 
 
+.clearFix{
+	clear: both;
+}
 
+.button{
+	padding: 6px 20px;
+	font-size: 14px +0.5;
+	border:none;
+	border-radius: 22px;
+	letter-spacing: 2px;
+	color: $colorWhite;
+}
