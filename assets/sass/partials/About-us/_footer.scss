@@ -4,7 +4,7 @@
 	position: relative;
 
 	.container{
-		padding: 95px 0;
+		padding: 70px 0;
 		border-bottom: 2px solid lighten($colorGray, 30%);
 		
 		.menu{
@@ -94,28 +94,7 @@
 
 
 				.search{
-					width: 262px;
-					height: 42px;
-					background-color: $colorWhite;
-					input{
-						width: 220px;
-						height: 42px;
-						background: transparent;
-						font-size: 12px;
-						text-indent: 15px;
-						border: 1px solid $colorBlue;
-						text-transform: $upper;
-						
-
-					}
-
-					button{
-						width: 42px;
-						height: 42px;
-						float: right;
-						background-color: $colorBlue;
-						border: none;
-						color: $colorWhite;
+					@extend .searchButton;
 					}
 				}
 			}
@@ -135,7 +114,9 @@
 		bottom: 0;
 		left:0;
 	}
-}
+
+
+
 
 
 

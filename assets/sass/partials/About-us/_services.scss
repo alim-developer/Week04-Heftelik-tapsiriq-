@@ -2,7 +2,7 @@
 
 #services{
 	.container{
-		padding: 95px 0;
+		padding: 115px 0;
 		border-bottom: 2px solid lighten($colorGray, 30%);
 		h1{
 			font-size: $font-size*2+2;
@@ -26,7 +26,7 @@
 			background-color: $colorBlue;
 			width: 141px;
 			margin-right: 10px;
-			margin-top: 20px;
+			margin-top: 30px;
 			&:last-child{
 				background-color: $colorOrange;
 			}

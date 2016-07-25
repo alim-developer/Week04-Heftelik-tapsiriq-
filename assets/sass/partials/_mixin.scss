@@ -23,3 +23,50 @@ $font-size: 14px;
 	letter-spacing: 2px;
 	color: $colorWhite;
 }
+
+
+.searchButton{
+	width: 262px;
+	height: 42px;
+	background-color: $colorWhite;
+	input{
+		width: 220px;
+		height: 42px;
+		background: transparent;
+		font-size: 12px;
+		text-indent: 15px;
+		border: 1px solid $colorBlue;
+		text-transform: $upper;
+	}
+
+	button{
+		width: 42px;
+		height: 42px;
+		float: right;
+		background-color: $colorBlue;
+		border: none;
+		color: $colorWhite;
+	}
+}
+
+
+
+.ul {
+
+	padding:0;
+
+	li{
+		list-style:none;
+		line-height: 40px;
+		text-transform: $upper;
+		font-weight: bold; 
+		color: $colorGray;
+	}
+
+}
+
+.h1tag{
+	font-size: $font-size+1;
+	text-transform:$upper;
+	font-weight: bold;
+}

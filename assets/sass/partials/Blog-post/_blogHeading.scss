@@ -1,0 +1,174 @@
+
+
+#blogHeading{
+	.container{
+
+		border-bottom:2px solid lighten($colorGray, 30%);
+		
+		.left{
+			h1{
+				padding-left: 15px;
+				font-size: $font-size+14;
+				font-weight: Bold;
+			}
+
+			h4{
+				font-size: $font-size +1;
+				padding-left: 16px;
+				font-weight: bold;
+				span{
+					color: $colorOrange;
+				}
+
+			}
+			
+			p{
+				color:$colorGray;
+				padding:30px 16px;
+			}
+
+			ul{
+				padding-left: 100px;
+				@extend .ul;
+
+				li{	
+
+					font-size: $font-size -1;
+					i{
+						margin-right: 10px;
+						color: $colorOrange;
+					}
+
+				}
+
+
+
+			}
+
+			.author{
+				width: 845px;
+				height: 191px;
+				background-color: $backgroundColorBlue;
+				padding: 40px;
+				margin-top: 20px;
+				margin-bottom: 70px;
+
+				img {
+					float: left;
+					margin-right: 40px;
+				}
+				.madonna{
+					padding: 20px 0;
+
+					h3{
+						font-size: $font-size +1;
+						padding:0;
+						margin:0;
+						font-weight: bold;
+						text-transform: $upper;
+
+						span{
+							color:$colorOrange;
+						}
+					}
+				}
+			}
+		}
+
+
+		.right{
+			padding-left:50px;
+
+			h4{
+				padding:15px;
+			} 
+
+			img{
+				float:left;
+				margin-right: 25px;
+				margin-bottom: 25px;
+			}
+
+			span{
+				color: $colorOrange;
+			}
+
+			h5{
+				font-weight: bold;
+			}
+
+			p{
+				font-weight: bold;
+			}
+
+
+			.business{
+				margin-left:15;
+
+				.busy{
+					width: 95px;
+					height: 40px;
+					background-color: $colorBlue;
+					float:left;
+					margin-right: 10px;
+					margin-bottom: 10px;
+
+					
+				}
+
+				.idea{
+					@extend .busy;
+					width: 50px;
+					height: 40px;
+					
+					
+
+				}
+				
+				.lipsum{
+					@extend .idea;
+					width: 65px;
+					height: 40px;
+					
+				}
+
+				.featured{
+					@extend .idea;
+					width: 109.555px;
+					height: 40px;
+					
+				}
+				.post{
+					@extend .idea;
+					width: 109.555px;
+					height: 40px;
+					
+				}
+
+				h4{
+					padding-left:0;
+
+				}
+					
+				h6{
+					color:$colorWhite;
+					font-weight: bold;
+					font-size: $font-size -1;
+					line-height: 15px;
+				}
+
+
+
+
+
+
+			}
+
+
+
+
+
+
+		}
+	}
+}
