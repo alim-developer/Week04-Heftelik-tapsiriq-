@@ -1,0 +1,20 @@
+@import "../bootstrap/bootstrap";
+@import "partials/mixin";
+
+@import "partials/About-us/contact";
+@import "partials/About-us/menu";
+@import "partials/About-us/slider";
+@import "partials/Blog-post/blogBanner";
+@import "partials/Blog-post/blogHeading";
+@import "partials/Blog/blogHeadingYama";
+@import "partials/Blog/blogVideo_OR_blogAudio";
+@import "partials/Blog/blogAudio";
+@import "partials/About-us/footer";
+
+
+
+
+body{
+	font-family: "Tahoma", sans-serif;
+	color: #23282f;
+}

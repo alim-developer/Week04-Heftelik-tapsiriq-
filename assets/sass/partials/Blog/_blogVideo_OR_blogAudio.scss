@@ -1,0 +1,41 @@
+#blogVideo, #blogAudio{
+	
+	h1{
+		padding-left: 15px;
+		font-size: $font-size+14;
+		font-weight: Bold;
+	}
+
+	h4{
+		font-size: $font-size +1;
+		padding-left: 16px;
+		font-weight: bold;
+		text-transform: $upper;
+		span{
+		color: $colorOrange;
+		}
+	}
+			
+	p{
+		color:$colorGray;
+		padding:30px 16px;
+	}
+	
+	
+	.cls{
+		button{
+			@extend .button;
+			background-color: $colorBlue;
+		}
+		
+		padding-left: 15px;
+		padding-top: 10px;
+		padding-bottom: 60px;
+		border-bottom: 2px solid lighten($colorGray, 30%);
+	}
+
+
+
+
+
+}

@@ -1,0 +1,17 @@
+@import "../bootstrap/bootstrap";
+@import "partials/mixin";
+
+@import "partials/About-us/contact";
+@import "partials/About-us/menu";
+
+@import "partials/Contact-us/location";
+@import "partials/Contact-us/commentBox2";
+//@import "partials/About-us/footer";
+
+
+
+
+body{
+	font-family: "Tahoma", sans-serif;
+	color: #23282f;
+}

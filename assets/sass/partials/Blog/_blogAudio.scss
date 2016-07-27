@@ -1,0 +1,40 @@
+
+
+#blogAudio{
+
+	.pagesNumber{
+		margin-top: 50px;
+		overflow: hidden;
+		margin-bottom: 50px;
+
+		div{
+			width: 43px;
+			height: 42px;
+			float: left;
+			margin-right: 10px;
+			background-color: $colorBlue;
+			&:first-child{
+				background-color: $colorOrange;
+			}
+
+			p{	
+				padding:0;
+				margin: 0;
+				color: $colorWhite;
+				font-size: $font-size +4;
+				line-height: 40px;
+
+			
+			}
+			&:nth-child(4){
+				background-color: transparent;
+
+				p{
+					color:#23282f;
+				}
+			}
+		}
+	}
+
+
+}

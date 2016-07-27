@@ -15,6 +15,8 @@ $font-size: 14px;
 	clear: both;
 }
 
+
+
 .button{
 	padding: 8px 20px;
 	font-size: 14px +0.5;
@@ -65,7 +67,7 @@ $font-size: 14px;
 
 }
 
- @mixin h1tag{
+@mixin h1tag{
 	font-size: $font-size+10;
 	text-transform:$upper;
 	font-weight: bold;
@@ -73,10 +75,16 @@ $font-size: 14px;
 
 
 @mixin input{
-	width: 405px;
-	height: 48px;
 	text-indent: 15px;
 	margin: 8px;
+	border: none;
+	background-color: $backgroundColorBlue;
+	font-size: $font-size -1px;
+}
+
+@mixin textarea {
+	margin: 8px;
+	text-indent: 15px;
 	border: none;
 	background-color: $backgroundColorBlue;
 	font-size: $font-size -1px;

@@ -5814,7 +5814,7 @@ button.close {
 .clearFix {
   clear: both; }
 
-.button {
+.button, #blogHeadingYama .cls button, #blogVideo .cls button, #blogAudio .cls button {
   padding: 8px 20px;
   font-size: 14px +0.5;
   border: none;
@@ -6047,59 +6047,62 @@ button.close {
       font-size: 14px -1;
       line-height: 15px; }
 
-#comments .container {
-  padding: 35px 0; }
-  #comments .container h1, #comments .container #slider .container-fluid .row h4, #slider .container-fluid .row #comments .container h4 {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold; }
-  #comments .container .maxvell {
-    padding: 30px 0;
-    border-bottom: 2px solid #e7eaec; }
-    #comments .container .maxvell img {
-      float: left;
-      margin-right: 20px; }
-    #comments .container .maxvell h6 {
-      font-size: 15px;
-      font-weight: bold;
-      text-transform: uppercase; }
-    #comments .container .maxvell a {
-      color: #f69b37;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: bold; }
-    #comments .container .maxvell p {
-      overflow: hidden;
-      color: #93a1a7; }
-
-#commentBox .container .border {
-  padding-bottom: 70px;
+#blogHeadingYama .cls {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 60px;
   border-bottom: 2px solid #e7eaec; }
-#commentBox .container h1, #commentBox .container #slider .container-fluid .row h4, #slider .container-fluid .row #commentBox .container h4 {
-  font-size: 24px;
-  text-transform: uppercase;
+  #blogHeadingYama .cls button {
+    background-color: #29c2e1; }
+#blogHeadingYama img {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 30px; }
+
+#blogVideo h1, #blogVideo #slider .container-fluid .row h4, #slider .container-fluid .row #blogVideo h4, #blogAudio h1, #blogAudio #slider .container-fluid .row h4, #slider .container-fluid .row #blogAudio h4 {
+  padding-left: 15px;
+  font-size: 28px;
+  font-weight: Bold; }
+#blogVideo h4, #blogAudio h4 {
+  font-size: 15px;
+  padding-left: 16px;
   font-weight: bold;
-  margin-left: 7px; }
-#commentBox .container input {
-  text-indent: 15px;
-  margin: 8px;
-  border: none;
-  background-color: #e5eef0;
-  font-size: 14px -1px;
-  width: 405px;
-  height: 48px; }
-#commentBox .container textarea {
-  margin: 8px;
-  text-indent: 15px;
-  border: none;
-  background-color: #e5eef0;
-  font-size: 14px -1px;
-  width: 830px;
-  height: 200px; }
-#commentBox .container button {
-  background-color: #29c2e1;
-  padding: 6px 25px;
-  margin-top: 20px; }
+  text-transform: uppercase; }
+  #blogVideo h4 span, #blogAudio h4 span {
+    color: #f69b37; }
+#blogVideo p, #blogAudio p {
+  color: #93a1a7;
+  padding: 30px 16px; }
+#blogVideo .cls, #blogAudio .cls {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  border-bottom: 2px solid #e7eaec; }
+  #blogVideo .cls button, #blogAudio .cls button {
+    background-color: #29c2e1; }
+
+#blogAudio .pagesNumber {
+  margin-top: 50px;
+  overflow: hidden;
+  margin-bottom: 50px; }
+  #blogAudio .pagesNumber div {
+    width: 43px;
+    height: 42px;
+    float: left;
+    margin-right: 10px;
+    background-color: #29c2e1; }
+    #blogAudio .pagesNumber div:first-child {
+      background-color: #f69b37; }
+    #blogAudio .pagesNumber div p {
+      padding: 0;
+      margin: 0;
+      color: #fff;
+      font-size: 18px;
+      line-height: 40px; }
+    #blogAudio .pagesNumber div:nth-child(4) {
+      background-color: transparent; }
+      #blogAudio .pagesNumber div:nth-child(4) p {
+        color: #23282f; }
 
 #footer {
   position: relative; }
@@ -6194,4 +6197,4 @@ body {
   font-family: "Tahoma", sans-serif;
   color: #23282f; }
 
-/*# sourceMappingURL=Blog-post.css.map */
+/*# sourceMappingURL=Blog.css.map */
