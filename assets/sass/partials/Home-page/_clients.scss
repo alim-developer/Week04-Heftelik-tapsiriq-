@@ -1,0 +1,12 @@
+#clients{
+
+	background-color: $backgroundColorBlue;
+	.container{
+		padding: 70px 0;
+
+		h1{
+			@include forFont;
+		}
+
+	}
+}

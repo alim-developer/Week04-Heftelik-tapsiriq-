@@ -60,7 +60,7 @@ strong {
 dfn {
   font-style: italic; }
 
-h1 {
+h1, #slider .container-fluid .row h4 {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -1150,14 +1150,15 @@ hr {
 [role="button"] {
   cursor: pointer; }
 
-h1, h2, h3, h4, h5, h6,
+h1, #slider .container-fluid .row h4, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
-  h1 small,
-  h1 .small, h2 small,
+  h1 small, #slider .container-fluid .row h4 small,
+  h1 .small,
+  #slider .container-fluid .row h4 .small, h2 small,
   h2 .small, h3 small,
   h3 .small, h4 small,
   h4 .small, h5 small,
@@ -1174,13 +1175,14 @@ h1, h2, h3, h4, h5, h6,
     line-height: 1;
     color: #777777; }
 
-h1, .h1,
+h1, #slider .container-fluid .row h4, .h1,
 h2, .h2,
 h3, .h3 {
   margin-top: 20px;
   margin-bottom: 10px; }
-  h1 small,
-  h1 .small, .h1 small,
+  h1 small, #slider .container-fluid .row h4 small,
+  h1 .small,
+  #slider .container-fluid .row h4 .small, .h1 small,
   .h1 .small,
   h2 small,
   h2 .small, .h2 small,
@@ -1206,7 +1208,7 @@ h6, .h6 {
   .h6 .small {
     font-size: 75%; }
 
-h1, .h1 {
+h1, #slider .container-fluid .row h4, .h1 {
   font-size: 36px; }
 
 h2, .h2 {
@@ -4299,7 +4301,7 @@ a.badge:hover, a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #eeeeee; }
-  .jumbotron h1,
+  .jumbotron h1, .jumbotron #slider .container-fluid .row h4, #slider .container-fluid .row .jumbotron h4,
   .jumbotron .h1 {
     color: inherit; }
   .jumbotron p {
@@ -4321,7 +4323,7 @@ a.badge:hover, a.badge:focus {
       .container .jumbotron, .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
-      .jumbotron h1,
+      .jumbotron h1, .jumbotron #slider .container-fluid .row h4, #slider .container-fluid .row .jumbotron h4,
       .jumbotron .h1 {
         font-size: 63px; } }
 
@@ -5849,6 +5851,7 @@ button.close {
     font-weight: bold;
     color: #93a1a7; }
 
+/* Home-page h1 ucun */
 #contact .container-fluid {
   width: 100%;
   height: 50px;
@@ -5902,67 +5905,110 @@ button.close {
             background-color: #29c2e1;
             color: #fff; }
 
-#location .container {
-  padding: 70px 0;
-  border-bottom: 2px solid #e7eaec; }
-  #location .container h1 {
-    font-size: 28px;
-    font-weight: Bold;
-    text-transform: uppercase; }
-  #location .container h5 {
-    font-size: 18px;
-    text-transform: uppercase; }
-  #location .container .image {
-    width: 100%;
-    height: 417px;
+#slider {
+  position: relative; }
+  #slider .container-fluid {
     background-color: #8d8d8d;
-    margin-top: 15px;
-    margin-bottom: 55px;
-    padding: 188px 0;
-    padding-left: 285px; }
-  #location .container p {
-    margin: 0;
-    color: #8d8d8d;
-    font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase; }
-  #location .container .phoneBoard {
-    width: 66px;
-    height: 66px;
-    border: 2px solid #29c2e1;
-    border-radius: 50%;
-    padding: 15px;
-    margin: 20 auto; }
+    height: 750px;
+    margin-top: -20px;
+    padding-top: 315px; }
+    #slider .container-fluid .row h1, #slider .container-fluid .row h4 {
+      font-size: 48px;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0px; }
+    #slider .container-fluid .row h4 {
+      font-size: 14px;
+      margin-bottom: 0px;
+      padding-top: 0; }
+    #slider .container-fluid .circle {
+      border: 2px solid #fff;
+      width: 65px;
+      height: 65px; }
+    #slider .container-fluid .circless {
+      display: inline-block;
+      position: absolute;
+      bottom: 50px; }
+      #slider .container-fluid .circless div {
+        width: 12px;
+        height: 12px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        float: left;
+        margin: 0 5px;
+        position: relative; }
+        #slider .container-fluid .circless div:hover:after {
+          content: 'IMAGE';
+          color: #fff;
+          font-weight: bold;
+          padding-top: 20px;
+          border: 3px solid #fff;
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          position: absolute;
+          top: -80px;
+          left: -29px; }
+        #slider .container-fluid .circless div:hover:before {
+          content: '';
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 10px solid #fff;
+          border-bottom: 10px solid transparent;
+          position: absolute;
+          top: -16px;
+          left: -1px; }
 
-#commentBox2 .container {
-  padding: 80px 0;
-  border-bottom: 2px solid #e7eaec; }
-  #commentBox2 .container h1 {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold; }
-  #commentBox2 .container input {
-    text-indent: 15px;
-    margin: 8px;
-    border: none;
-    background-color: #e5eef0;
-    font-size: 14px -1px;
-    width: 49.129%;
-    height: 48px;
-    margin-left: 0; }
-  #commentBox2 .container textarea {
-    margin: 8px;
-    text-indent: 15px;
-    border: none;
-    background-color: #e5eef0;
-    font-size: 14px -1px;
-    width: 100%;
-    height: 158px;
-    margin-left: 0; }
-  #commentBox2 .container button {
-    background-color: #29c2e1;
-    padding: 8px 30px;
-    margin-top: 20px; }
+#startup .container {
+  padding-top: 70px; }
+  #startup .container .leftColum {
+    padding-right: 20px; }
+    #startup .container .leftColum h1, #startup .container .leftColum #slider .container-fluid .row h4, #slider .container-fluid .row #startup .container .leftColum h4 {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    #startup .container .leftColum p {
+      margin-top: 45px;
+      margin-bottom: 60px;
+      font-size: 14px;
+      color: #93a1a7; }
+    #startup .container .leftColum div {
+      width: 585px;
+      height: 301px;
+      background-color: #8d8d8d; }
+  #startup .container .rightColm {
+    padding-top: 30px; }
+    #startup .container .rightColm .back, #startup .container .rightColm .simple, #startup .container .rightColm .error {
+      display: inline-block;
+      background-color: #f69b37;
+      width: 67px;
+      height: 67px;
+      padding-top: 15px;
+      margin-left: 15px;
+      margin-right: 30px;
+      margin-bottom: 80px;
+      float: left; }
+    #startup .container .rightColm .simple, #startup .container .rightColm .error {
+      background-color: #b4ced4; }
+    #startup .container .rightColm h5 {
+      margin-top: 0;
+      font-size: 20px; }
+    #startup .container .rightColm p {
+      color: #93a1a7;
+      font-size: 14px; }
+    #startup .container .rightColm .button {
+      margin-top: 20px;
+      background-color: #29c2e1; }
+
+#clients {
+  background-color: #e5eef0; }
+  #clients .container {
+    padding: 70px 0; }
+    #clients .container h1, #clients .container #slider .container-fluid .row h4, #slider .container-fluid .row #clients .container h4 {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase; }
 
 body {
   font-family: "Tahoma", sans-serif;

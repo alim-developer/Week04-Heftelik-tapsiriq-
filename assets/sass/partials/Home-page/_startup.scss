@@ -1,0 +1,77 @@
+
+
+#startup{
+	.container{
+		padding-top: 70px;
+		.leftColum{
+			padding-right: 20px;
+			h1{
+				@include forFont;
+			}
+
+			p{
+				margin-top: 45px;
+				margin-bottom: 60px;
+				font-size: $font-size;
+				color: $colorGray;
+			}
+
+			div{
+				width: 585px;
+				height: 301px;
+				background-color: $backgroundColorGray;
+			}
+
+		}
+
+
+		.rightColm{
+			padding-top: 30px;
+			.back{
+				display: inline-block;
+				background-color: $colorOrange;
+				width: 67px;
+				height: 67px;
+				padding-top: 15px;
+				margin-left: 15px;
+				margin-right: 30px;
+				margin-bottom: 80px;
+				float:left;
+
+			}
+
+			.simple, .error {
+				@extend .back;
+				background-color: darken($backgroundColorBlue, 15%);
+			}
+
+
+
+			h5{
+				margin-top:0;
+				font-size: $font-size +6;
+			}
+
+			p{
+				color: $colorGray;
+				font-size: $font-size;
+			}
+		
+		.button{
+			margin-top: 20px;
+			background-color: $colorBlue;
+
+		}
+
+
+
+		}
+		
+
+
+
+
+
+
+	}
+}
