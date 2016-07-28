@@ -5814,7 +5814,7 @@ button.close {
 .clearFix {
   clear: both; }
 
-.button {
+.button, #features .container button {
   padding: 8px 20px;
   font-size: 14px +0.5;
   border: none;
@@ -5968,20 +5968,23 @@ button.close {
       font-size: 28px;
       font-weight: bold;
       text-transform: uppercase; }
+    #startup .container .leftColum h4 {
+      text-transform: uppercase;
+      font-size: 18px; }
     #startup .container .leftColum p {
       margin-top: 45px;
       margin-bottom: 60px;
       font-size: 14px;
       color: #93a1a7; }
     #startup .container .leftColum div {
-      width: 585px;
+      width: 90%;
       height: 301px;
       background-color: #8d8d8d; }
   #startup .container .rightColm {
     padding-top: 30px; }
-    #startup .container .rightColm .back, #startup .container .rightColm .simple, #startup .container .rightColm .error {
+    #startup .container .rightColm .back {
       display: inline-block;
-      background-color: #f69b37;
+      background-color: #b4ced4;
       width: 67px;
       height: 67px;
       padding-top: 15px;
@@ -5989,26 +5992,161 @@ button.close {
       margin-right: 30px;
       margin-bottom: 80px;
       float: left; }
-    #startup .container .rightColm .simple, #startup .container .rightColm .error {
-      background-color: #b4ced4; }
+      #startup .container .rightColm .back:hover {
+        background-color: #f69b37; }
     #startup .container .rightColm h5 {
       margin-top: 0;
       font-size: 20px; }
     #startup .container .rightColm p {
       color: #93a1a7;
       font-size: 14px; }
-    #startup .container .rightColm .button {
+    #startup .container .rightColm .button, #startup #features .container .rightColm button, #features #startup .container .rightColm button {
       margin-top: 20px;
       background-color: #29c2e1; }
 
 #clients {
   background-color: #e5eef0; }
   #clients .container {
-    padding: 70px 0; }
+    padding-top: 75px;
+    padding-bottom: 44px;
+    /*dairelerin effekt verildiyi hisse*/
+    /*dairelerin effekt verildiyi hisse*/ }
     #clients .container h1, #clients .container #slider .container-fluid .row h4, #slider .container-fluid .row #clients .container h4 {
       font-size: 28px;
       font-weight: bold;
       text-transform: uppercase; }
+    #clients .container h4 {
+      text-transform: uppercase;
+      font-size: 18px; }
+    #clients .container i {
+      margin-left: 5px; }
+    #clients .container span {
+      color: #f69b37;
+      text-transform: uppercase; }
+    #clients .container .size {
+      padding: 40px 0;
+      padding-right: 25px;
+      border-right: 1px solid #afb9be; }
+      #clients .container .size .left p {
+        color: #6b7c83;
+        font-size: 14px;
+        margin-bottom: 30px; }
+    #clients .container .circ {
+      min-height: 195px;
+      position: relative; }
+    #clients .container .circleSize {
+      display: inline-block;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 46%; }
+      #clients .container .circleSize div {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #93a1a7;
+        float: left;
+        margin: 0 5px;
+        position: relative; }
+        #clients .container .circleSize div:hover {
+          background-color: #29c2e1; }
+        #clients .container .circleSize div:first-child:after {
+          content: "IMAGE";
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          background-color: #93a1a7;
+          color: #fff;
+          font-size: 14px;
+          font-weight: bold;
+          padding-top: 55px;
+          position: absolute;
+          top: -150px;
+          left: -195px; }
+        #clients .container .circleSize div:nth-child(2):after {
+          content: "IMAGE";
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          background-color: #93a1a7;
+          color: #fff;
+          font-size: 14px;
+          font-weight: bold;
+          padding-top: 55px;
+          position: absolute;
+          top: -150px;
+          left: -60px; }
+        #clients .container .circleSize div:last-child:after {
+          content: "IMAGE";
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          background-color: #93a1a7;
+          color: #fff;
+          font-size: 14px;
+          font-weight: bold;
+          padding-top: 55px;
+          position: absolute;
+          top: -150px;
+          left: 77px; }
+    #clients .container .circleSize > div:hover:after {
+      background-color: #f69b37; }
+
+#features .container {
+  position: relative; }
+  #features .container .backgroundBlue {
+    width: 68px;
+    height: 68px;
+    background-color: #e5eef0; }
+    #features .container .backgroundBlue:hover {
+      background-color: #f69b37; }
+    #features .container .backgroundBlue img {
+      padding: 15px; }
+  #features .container .ucken1 {
+    display: inline-block;
+    border-top: 60px solid transparent;
+    border-bottom: 100px solid #f69b37;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 20px; }
+  #features .container .ucken2 {
+    display: inline-block;
+    border-top: 40px solid transparent;
+    border-bottom: 60px solid #29c2e1;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 120px; }
+
+#features .container {
+  padding: 80px 0;
+  border-bottom: 2px solid #e7eaec; }
+  #features .container h1, #features .container #slider .container-fluid .row h4, #slider .container-fluid .row #features .container h4 {
+    font-size: 30px;
+    padding-left: 15px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  #features .container h4 {
+    font-size: 18px;
+    padding-left: 15px;
+    text-transform: uppercase; }
+  #features .container .text {
+    padding-top: 45px; }
+    #features .container .text img {
+      float: right; }
+    #features .container .text h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 20px; }
+    #features .container .text p {
+      font-size: 14px;
+      line-height: 22px; }
+  #features .container button {
+    background-color: #29c2e1;
+    margin-top: 70px; }
 
 body {
   font-family: "Tahoma", sans-serif;

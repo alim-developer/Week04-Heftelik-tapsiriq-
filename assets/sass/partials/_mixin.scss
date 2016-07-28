@@ -97,3 +97,8 @@ $font-size: 14px;
 	font-weight: bold;
 	text-transform: $upper;
 }
+
+@mixin forFontMini{
+	text-transform: $upper;
+	font-size: $font-size +4;
+}

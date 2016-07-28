@@ -1,0 +1,45 @@
+#features{
+	.container{
+	position:relative;
+		.backgroundBlue{
+			width: 68px;
+			height: 68px;
+			background-color: $backgroundColorBlue;
+
+			&:hover{
+				background-color: $colorOrange;
+			}
+
+
+			img{
+			padding:15px;
+			}
+		}
+
+
+		.ucken1 {
+			display: inline-block;
+			border-top: 60px solid transparent;
+			border-bottom: 100px solid $colorOrange;
+			border-left: 60px solid transparent;
+			border-right: 60px solid transparent;
+			position: absolute;
+			bottom:0;
+			right: 20px;
+		}
+
+		.ucken2 {
+			display: inline-block;
+			border-top: 40px solid transparent;
+			border-bottom: 60px solid $colorBlue;
+			border-left: 40px solid transparent;
+			border-right: 40px solid transparent;
+			position: absolute;
+			bottom:0;
+			right: 120px;
+		}
+
+	}
+
+
+}

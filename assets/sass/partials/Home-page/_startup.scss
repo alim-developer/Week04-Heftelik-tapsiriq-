@@ -9,6 +9,10 @@
 				@include forFont;
 			}
 
+			h4{
+				@include forFontMini;
+			}
+
 			p{
 				margin-top: 45px;
 				margin-bottom: 60px;
@@ -17,7 +21,7 @@
 			}
 
 			div{
-				width: 585px;
+				width: 90%;
 				height: 301px;
 				background-color: $backgroundColorGray;
 			}
@@ -29,7 +33,7 @@
 			padding-top: 30px;
 			.back{
 				display: inline-block;
-				background-color: $colorOrange;
+				background-color: darken($backgroundColorBlue, 15%);
 				width: 67px;
 				height: 67px;
 				padding-top: 15px;
@@ -37,13 +41,12 @@
 				margin-right: 30px;
 				margin-bottom: 80px;
 				float:left;
-
+				&:hover{
+					background-color: $colorOrange;
+				}
 			}
 
-			.simple, .error {
-				@extend .back;
-				background-color: darken($backgroundColorBlue, 15%);
-			}
+			
 
 
 
@@ -62,16 +65,6 @@
 			background-color: $colorBlue;
 
 		}
-
-
-
 		}
-		
-
-
-
-
-
-
 	}
 }
