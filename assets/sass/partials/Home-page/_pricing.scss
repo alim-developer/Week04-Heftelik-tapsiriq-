@@ -1,0 +1,74 @@
+#pricing{
+	.container{
+		padding: 85px 0;
+		
+		h1{
+			@include forFont;
+		}
+
+		h3{
+			@include forFontMini;
+			margin:0px;		
+		}
+
+		.thumbnail{
+			padding: 30px 0;
+			margin-top:35px;
+			
+			&:hover{
+				box-shadow: 0px 0px 70px $backgroundColorBlue;
+			}
+
+			h4{
+				font-size: $font-size+6;
+				text-transform: $upper;
+				font-weight: bold;
+				padding: 0 20px;
+				position: relative;
+
+
+				&:after{
+					content:'';
+					width: 38px;
+					border:1px solid $colorOrange;
+					position: absolute;
+					bottom:-11;
+					left:82;
+				}
+				
+			}
+
+			h5{
+				border: 1px solid lighten($colorGray, 30%);
+				border-left: transparent;
+				border-right: transparent;
+				font-size: $font-size+4;
+				padding: 15px 20px;
+				color: $colorGray;
+				font-weight: 300;
+				span{
+					color:$colorOrange;
+				}
+			}
+
+			p{
+
+				font-size: $font-size+1;
+				line-height:30px;
+				padding: 35px 60px;
+				margin-bottom:50px;
+				color: $colorGray;
+
+			}
+
+			button{
+				margin: 10px 0;
+				background-color: $colorBlue;
+
+				&:hover{
+					background-color: $colorOrange;
+				}
+			}
+		}
+	}
+}

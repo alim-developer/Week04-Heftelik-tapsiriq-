@@ -1,0 +1,24 @@
+@import "../bootstrap/bootstrap";
+@import "partials/mixin";
+
+@import "partials/Home-page-two/contact";
+@import "partials/About-us/menu";
+@import "partials/Home-page-two/slider";
+@import "partials/Home-page-two/WeAre";
+@import "partials/About-us/features";
+@import "partials/Home-page-two/services";
+@import "partials/Home-page-two/clients";
+
+//@import "partials/Home-page/pricing";
+//@import "partials/About-us/team";
+//@import "partials/About-us/footer";
+
+
+
+
+
+
+body{
+	font-family: "Tahoma", sans-serif;
+	color: #23282f;
+}

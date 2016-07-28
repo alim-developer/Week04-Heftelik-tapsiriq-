@@ -3,6 +3,7 @@ $colorOrange: #f69b37;
 $colorBlack: #23282f;
 $colorGray: #93a1a7;
 $colorWhite: #fff;
+$colorDarkGreen: #1f2629;
 $backgroundColorBlue: #e5eef0;
 $backgroundColorGray: #8d8d8d;
 $upper: uppercase;
@@ -96,9 +97,36 @@ $font-size: 14px;
 	font-size: $font-size *+2;
 	font-weight: bold;
 	text-transform: $upper;
+	
 }
 
 @mixin forFontMini{
 	text-transform: $upper;
 	font-size: $font-size +4;
+}
+
+
+@mixin button2($backColor){
+	color: $colorWhite;
+	text-transform: $upper;
+	width: 123px;
+	height: 43px;
+	background-color: $backColor;
+	padding: 10px 0px;
+	border: none;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+@mixin sticker{
+
+	min-width: 10px;
+	color: $colorWhite;
+	background-color: $colorOrange;
+	font-size: 12px;
+	padding: 3px 5px;
+	display: inline;
+	text-transform: $upper;
+
+	
 }
