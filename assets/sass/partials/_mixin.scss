@@ -130,3 +130,46 @@ $font-size: 14px;
 
 	
 }
+
+
+@mixin newsInBorders {
+
+	h1{
+				font-family: 'Raleway', sans-serif;
+				font-size: 48px;
+				font-weight: normal;
+			}
+
+			h3{
+				font-family: 'Raleway', sans-serif;
+				font-size: $font-size +2;
+
+			}
+
+			h4{
+				
+				margin-top: 40px;
+				margin-bottom: 20px;
+				font-size: $font-size +4;
+			}
+
+			p{
+				padding: 0 50px;
+				font-size: $font-size;
+				color: darken($colorGray, 30%);
+			}
+
+			button{
+				@extend .button;
+				margin: 10px;
+				margin-top: 25px;
+				width: 139px;
+				height: 42px;
+				background-color: $colorBlue;
+
+				&:hover{
+					background-color: $colorOrange;
+				}
+			}
+
+}

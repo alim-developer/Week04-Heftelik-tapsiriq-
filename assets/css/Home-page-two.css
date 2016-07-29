@@ -5822,11 +5822,11 @@ button.close {
   letter-spacing: 2px;
   color: #fff; }
 
-.searchButton {
+.searchButton, #footer .container .newsLetter ul .search {
   width: 262px;
   height: 42px;
   background-color: #fff; }
-  .searchButton input {
+  .searchButton input, #footer .container .newsLetter ul .search input {
     width: 220px;
     height: 42px;
     background: transparent;
@@ -5834,7 +5834,7 @@ button.close {
     text-indent: 15px;
     border: 1px solid #29c2e1;
     text-transform: uppercase; }
-  .searchButton button {
+  .searchButton button, #footer .container .newsLetter ul .search button {
     width: 42px;
     height: 42px;
     float: right;
@@ -5916,13 +5916,15 @@ button.close {
     min-height: 750px;
     position: relative; }
   #slider .container-fluid .newsLetter {
+    margin: 0 auto;
     background-color: #1f2629;
-    height: 90px;
+    width: 95%;
+    min-height: 90px;
     border-radius: 3px;
-    padding: 10px 30px;
+    padding: 10px 0px;
     margin-bottom: 0px;
     position: absolute;
-    bottom: 25px;
+    bottom: 30px;
     left: 35px; }
     #slider .container-fluid .newsLetter h3 {
       color: #fff;
@@ -5948,7 +5950,7 @@ button.close {
         position: absolute;
         left: -30; }
     #slider .container-fluid .newsLetter input {
-      width: 330px;
+      width: 27%;
       height: 40px;
       border: 1px solid transparent;
       border-radius: 3px;
@@ -5957,7 +5959,7 @@ button.close {
     #slider .container-fluid .newsLetter button {
       background-color: #f69b37;
       border-radius: 3px;
-      width: 190px;
+      width: 21%;
       font-weight: bold;
       height: 40px; }
 
@@ -5983,7 +5985,8 @@ button.close {
     #WeAre .container .we .tutorial {
       width: 100%;
       height: 240px;
-      background-color: #e5eef0; }
+      background-color: #e5eef0;
+      padding-bottom: 25px; }
     #WeAre .container .we .forImage {
       width: 475px;
       height: 308px;
@@ -6022,7 +6025,6 @@ button.close {
   #features .container .text {
     padding-top: 45px; }
     #features .container .text img {
-      margin-bottom: -7px;
       float: right; }
     #features .container .text h3 {
       margin: 0;
@@ -6056,6 +6058,354 @@ button.close {
       background-color: #29c2e1; }
     .services .backgroundBlue img {
       padding: 15px; }
+
+#clients {
+  background-color: #f7941d; }
+  #clients .container {
+    padding-top: 95px;
+    padding-bottom: 70px; }
+    #clients .container .sticker {
+      min-width: 10px;
+      color: #fff;
+      background-color: #f69b37;
+      font-size: 12px;
+      padding: 3px 5px;
+      display: inline;
+      text-transform: uppercase;
+      background-color: #23282f; }
+    #clients .container h1, #clients .container #slider .container-fluid .contus h4, #slider .container-fluid .contus #clients .container h4 {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0; }
+    #clients .container .circle {
+      width: 45px;
+      height: 45px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      margin: 18px auto; }
+      #clients .container .circle i {
+        line-height: 45px;
+        color: #fff;
+        font-size: 18px; }
+    #clients .container .text {
+      padding-bottom: 20px; }
+      #clients .container .text p {
+        font-size: 15px;
+        font-style: oblique;
+        padding: 10px 0; }
+    #clients .container i {
+      font-size: 18px; }
+    #clients .container .quote {
+      height: 85px;
+      position: relative; }
+      #clients .container .quote i {
+        font-size: 18px;
+        transform: rotate(180deg);
+        position: absolute;
+        bottom: 0; }
+    #clients .container .by p {
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 0; }
+      #clients .container .by p:last-child {
+        font-weight: bold;
+        color: #23282f; }
+    #clients .container .altibucaqli {
+      margin: 25px 0;
+      display: inline-block;
+      width: 250px; }
+      #clients .container .altibucaqli img {
+        margin: 0 3px; }
+        #clients .container .altibucaqli img:nth-child(4) {
+          margin-top: -5px; }
+        #clients .container .altibucaqli img:nth-child(5) {
+          margin-top: -5px; }
+
+#pricing .container {
+  padding: 90px 0; }
+  #pricing .container h1, #pricing .container #slider .container-fluid .contus h4, #slider .container-fluid .contus #pricing .container h4 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0; }
+  #pricing .container .sticker {
+    min-width: 10px;
+    color: #fff;
+    background-color: #f69b37;
+    font-size: 12px;
+    padding: 3px 5px;
+    display: inline;
+    text-transform: uppercase; }
+  #pricing .container .thumbnail {
+    padding: 30px 0;
+    margin-top: 35px; }
+    #pricing .container .thumbnail:hover {
+      box-shadow: 0px 0px 70px #e5eef0; }
+    #pricing .container .thumbnail h4 {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 0 20px;
+      position: relative; }
+      #pricing .container .thumbnail h4:after {
+        content: '';
+        width: 38px;
+        border: 1px solid #f69b37;
+        position: absolute;
+        bottom: -11;
+        left: 82; }
+    #pricing .container .thumbnail h5 {
+      border: 1px solid #e7eaec;
+      border-left: transparent;
+      border-right: transparent;
+      font-size: 18px;
+      padding: 15px 20px;
+      color: #93a1a7;
+      font-weight: 300; }
+      #pricing .container .thumbnail h5 span {
+        color: #f69b37; }
+    #pricing .container .thumbnail p {
+      font-size: 15px;
+      line-height: 30px;
+      padding: 35px 60px;
+      margin-bottom: 50px;
+      color: #93a1a7;
+      text-align: center; }
+  #pricing .container button {
+    color: #fff;
+    text-transform: uppercase;
+    width: 123px;
+    height: 43px;
+    background-color: #f69b37;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 141px;
+    height: 46px;
+    position: relative;
+    top: -40px; }
+    #pricing .container button:hover {
+      background-color: #29c2e1; }
+
+#team {
+  background-color: #e5eef0;
+  padding: 62px 0; }
+  #team .container h1, #team .container #slider .container-fluid .contus h4, #slider .container-fluid .contus #team .container h4 {
+    padding-left: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700; }
+  #team .container h4 {
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #23282f; }
+  #team .container .thumbnail {
+    margin-top: 10px;
+    padding: 0; }
+    #team .container .thumbnail .img {
+      width: 263px;
+      height: 276px;
+      background-color: #8d8d8d; }
+    #team .container .thumbnail .caption {
+      padding: 25px; }
+      #team .container .thumbnail .caption p {
+        font-size: 14px;
+        text-transform: uppercase; }
+        #team .container .thumbnail .caption p:nth-child(2) {
+          color: #f69b37; }
+      #team .container .thumbnail .caption i {
+        margin-right: 5px;
+        color: #adbdc1; }
+        #team .container .thumbnail .caption i:hover {
+          color: #93a1a7; }
+
+#team .container {
+  padding-top: 40px;
+  padding-bottom: 30px; }
+  #team .container .sticker {
+    min-width: 10px;
+    color: #fff;
+    background-color: #f69b37;
+    font-size: 12px;
+    padding: 3px 5px;
+    display: inline;
+    text-transform: uppercase;
+    margin-left: 15px; }
+  #team .container h1, #team .container #slider .container-fluid .contus h4, #slider .container-fluid .contus #team .container h4 {
+    margin: 0; }
+  #team .container .thumbnail {
+    margin-top: 55px; }
+    #team .container .thumbnail .caption:hover {
+      background-color: #29c2e1;
+      color: #fff; }
+      #team .container .thumbnail .caption:hover p {
+        color: #23282f; }
+      #team .container .thumbnail .caption:hover i {
+        color: #fff; }
+        #team .container .thumbnail .caption:hover i:hover {
+          color: #afb9be; }
+
+#blogPost .container {
+  padding-top: 90px;
+  padding-bottom: 100px; }
+  #blogPost .container .sticker {
+    min-width: 10px;
+    color: #fff;
+    background-color: #f69b37;
+    font-size: 12px;
+    padding: 3px 5px;
+    display: inline;
+    text-transform: uppercase; }
+  #blogPost .container h1, #blogPost .container #slider .container-fluid .contus h4, #slider .container-fluid .contus #blogPost .container h4 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0; }
+  #blogPost .container .backend {
+    margin: 20px 0;
+    height: 395px;
+    background-color: #8d8d8d; }
+    #blogPost .container .backend div {
+      width: 83px;
+      height: 83px;
+      background-color: #29c2e1;
+      padding-top: 10px; }
+      #blogPost .container .backend div h1, #blogPost .container .backend div #slider .container-fluid .contus h4, #slider .container-fluid .contus #blogPost .container .backend div h4 {
+        font-size: 36px;
+        color: #fff;
+        margin: 0;
+        font-weight: 700; }
+      #blogPost .container .backend div p {
+        font-size: 14px;
+        color: #fff;
+        text-transform: uppercase;
+        padding-left: 25px; }
+  #blogPost .container .postHead {
+    padding-top: 10px;
+    padding-bottom: 30px; }
+    #blogPost .container .postHead h4 {
+      font-size: 20px; }
+    #blogPost .container .postHead i {
+      color: #f69b37; }
+    #blogPost .container .postHead span {
+      text-transform: uppercase;
+      margin-right: 30px; }
+  #blogPost .container p {
+    line-height: 22px;
+    padding-right: 35px;
+    margin-bottom: 50px; }
+  #blogPost .container button {
+    color: #fff;
+    text-transform: uppercase;
+    width: 123px;
+    height: 43px;
+    background-color: #f69b37;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 141px;
+    height: 45px; }
+    #blogPost .container button:hover {
+      background-color: #29c2e1; }
+
+#footer {
+  position: relative; }
+  #footer .container {
+    padding: 70px 0;
+    border-bottom: 2px solid #e7eaec; }
+    #footer .container .menu ul {
+      padding: 0px; }
+      #footer .container .menu ul li {
+        list-style: none;
+        line-height: 25px;
+        text-transform: uppercase; }
+        #footer .container .menu ul li a {
+          display: block;
+          padding: 2px 10px;
+          text-decoration: none;
+          color: #93a1a7;
+          border-radius: 15px;
+          font-size: 14px; }
+          #footer .container .menu ul li a:hover {
+            background: #29c2e1;
+            color: #fff; }
+          #footer .container .menu ul li a span {
+            color: #23282f;
+            font-size: 18px;
+            text-transform: none; }
+        #footer .container .menu ul li i {
+          color: #93a1a7; }
+          #footer .container .menu ul li i:first-child {
+            margin-left: 10px; }
+          #footer .container .menu ul li i:hover {
+            color: #485459; }
+    #footer .container .menu .g {
+      margin-top: 30px; }
+    #footer .container .contact ul {
+      padding: 0px; }
+      #footer .container .contact ul li {
+        list-style: none;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #93a1a7;
+        font-size: 14px; }
+        #footer .container .contact ul li span {
+          color: #23282f; }
+        #footer .container .contact ul li .cont {
+          font-size: 18px;
+          text-transform: none; }
+    #footer .container .newsLetter ul {
+      padding: 0px; }
+      #footer .container .newsLetter ul li {
+        list-style: none;
+        line-height: 29px;
+        color: #23282f;
+        font-size: 18px; }
+        #footer .container .newsLetter ul li:nth-child(2) {
+          text-transform: uppercase;
+          color: #93a1a7;
+          font-size: 14px;
+          margin-bottom: 5px; }
+
+.bord {
+  width: 0px;
+  height: 0px;
+  border-top: 160px solid transparent;
+  border-bottom: 160px solid #f69b37;
+  border-left: 220px solid #f69b37;
+  border-right: 220px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+#copyRight {
+  position: relative; }
+  #copyRight .container p {
+    color: #93a1a7;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 45px; }
+  #copyRight .bord2 {
+    width: 0px;
+    height: 0px;
+    border-top: 160px solid transparent;
+    border-bottom: 160px solid #29c2e1;
+    border-left: 220px solid transparent;
+    border-right: 220px solid #29c2e1;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+#footer .container-fluid {
+  background-color: #1f2629; }
+
+#copyRight {
+  background-color: #1f2629; }
 
 body {
   font-family: "Tahoma", sans-serif;

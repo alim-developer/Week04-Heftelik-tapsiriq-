@@ -6047,6 +6047,9 @@ button.close {
   #footer .container {
     padding: 70px 0;
     border-bottom: 2px solid #e7eaec; }
+    #footer .container .logos img {
+      margin-left: 15px;
+      margin-bottom: 15px; }
     #footer .container .menu ul {
       padding: 0px; }
       #footer .container .menu ul li {

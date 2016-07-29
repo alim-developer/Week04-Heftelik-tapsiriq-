@@ -6,7 +6,11 @@
 	.container{
 		padding: 70px 0;
 		border-bottom: 2px solid lighten($colorGray, 30%);
-		
+		.logos img{
+
+			margin-left: 15px;
+			margin-bottom: 15px;
+		}
 		.menu{
 			ul {
 				padding: 0px;
@@ -95,11 +99,11 @@
 
 				.search{
 					@extend .searchButton;
-					}
 				}
 			}
 		}
 	}
+}
 
 
 	.bord{
@@ -114,6 +118,7 @@
 		bottom: 0;
 		left:0;
 	}
+
 
 
 

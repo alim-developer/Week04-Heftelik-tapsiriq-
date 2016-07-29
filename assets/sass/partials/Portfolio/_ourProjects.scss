@@ -1,0 +1,135 @@
+#ourProjects{
+	.container{
+
+		padding-top: 95px;
+		h1{
+			@include forFont;
+			margin: 0;
+		}
+
+		h3{
+			@include forFontMini;
+			margin: 0;
+			margin-bottom: 35px;
+		}
+
+
+
+
+		.col-md-3{
+			padding: 0
+		}
+
+		@mixin public{
+			width: 100%;
+			padding: 10px;
+			background-color: $backgroundColorGray;
+			margin-bottom: 30px;
+		}
+
+		/*Ilk stun*/
+		.col-md-3:nth-of-type(1) .col-md-12:nth-of-type(1) > div{	
+			@include public;
+			height: 261px;	
+		}
+
+		.col-md-3:nth-of-type(1) .col-md-12:nth-of-type(2) > div{	
+			@include public;
+			height: 261px;	
+		}
+
+		.col-md-3:nth-of-type(1) .col-md-12:nth-of-type(3) > div{	
+			@include public;
+			height: 261px;	
+		}
+
+		.col-md-3:nth-of-type(1) .col-md-12:nth-of-type(4) > div{	
+			@include public;
+			height: 211px;	
+		}
+		/*Ilk stun*/
+
+
+		/*Ikinci stun*/
+		.col-md-3:nth-of-type(2) .col-md-12:nth-of-type(1) > div{	
+			@include public;
+			height: 393px;	
+		}
+
+		.col-md-3:nth-of-type(2) .col-md-12:nth-of-type(2) > div{	
+			@include public;
+			height: 150px;	
+		}
+
+		.col-md-3:nth-of-type(2) .col-md-12:nth-of-type(3) > div{	
+			@include public;
+			height: 170px;	
+		}
+
+		.col-md-3:nth-of-type(2) .col-md-12:nth-of-type(4) > div{	
+			@include public;
+			height: 170px;	
+		}
+		/*Ikinci stun*/
+
+
+
+		/*Ucuncu stun*/
+		.col-md-3:nth-of-type(3) .col-md-12:nth-of-type(1) > div{	
+			@include public;
+			height: 193px;	
+		}
+
+		.col-md-3:nth-of-type(3) .col-md-12:nth-of-type(2) > div{	
+			@include public;
+			height: 393px;	
+		}
+
+		.col-md-3:nth-of-type(3) .col-md-12:nth-of-type(3) > div{	
+			@include public;
+			height: 393px;	
+		}		
+		/*Ucuncu stun*/
+
+
+
+		/*Dorduncu stun*/
+		.col-md-3:nth-of-type(4) .col-md-12:nth-of-type(1) > div{	
+			@include public;
+			height: 327px;	
+		}
+
+		.col-md-3:nth-of-type(4) .col-md-12:nth-of-type(2) > div{	
+			@include public;
+			height: 327px;	
+		}
+
+		.col-md-3:nth-of-type(4) .col-md-12:nth-of-type(3) > div{	
+			@include public;
+			height: 367px;	
+		}
+		/*Dorduncu stun*/
+		
+
+		.col-md-12 div > div{
+			width: 100%;
+			height: 100%;
+				
+			&:hover{
+				background-color: #f4f4f4;
+			}
+
+			p, i{
+				font-size: $font-size;
+				color: $backgroundColorGray;
+				text-transform: $upper;
+				margin: 0;
+			}
+
+			p{
+				padding-top: 25%;
+				font-weight: bold;
+			}
+		}
+	}
+}
