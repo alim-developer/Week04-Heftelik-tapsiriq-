@@ -10,6 +10,9 @@ $upper: uppercase;
 $font-size: 14px;
 
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+
 
 
 .clearFix{
@@ -20,7 +23,7 @@ $font-size: 14px;
 
 .button{
 	padding: 8px 20px;
-	font-size: 14px +0.5;
+	font-size: 14px + 0.5;
 	border:none;
 	border-radius: 22px;
 	letter-spacing: 2px;

@@ -1,0 +1,45 @@
+#ourProjects{
+	.container{
+
+		padding-top: 95px;
+		h1{
+			@include forFont;
+			margin: 0;
+		}
+
+		h3{
+			@include forFontMini;
+			margin: 0;
+			margin-bottom: 35px;
+		}
+
+		.col-md-6 > div{
+			width: 555px;
+			height: 380px;
+			margin-bottom: 35px;
+			background-color: $backgroundColorGray;
+			padding: 10px;
+		}
+
+		.col-md-6 div > div{
+			width: 100%;
+			height: 100%;
+
+			&:hover{
+				background-color: #f4f4f4;
+			}
+
+			p, i{
+				font-size: $font-size;
+				color: $backgroundColorGray;
+				text-transform: $upper;
+				margin: 0;
+			}
+
+			p{
+				padding-top: 30%;
+				font-weight: bold;
+			}
+		}
+	}
+}
