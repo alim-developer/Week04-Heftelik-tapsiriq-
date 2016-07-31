@@ -13,7 +13,12 @@
 
 		.thumbnail{
 			margin-top: 55px;
+
+			img{
+				width: 100%;
+			}
 			.caption{
+				transition: all 0.3s ease;
 
 				&:hover {
 					background-color: $colorBlue;

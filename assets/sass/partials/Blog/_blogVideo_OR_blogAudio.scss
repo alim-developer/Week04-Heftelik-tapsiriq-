@@ -20,18 +20,27 @@
 		color:$colorGray;
 		padding:30px 16px;
 	}
+
+	embed{
+		width: 100%;
+	}
 	
 	
 	.cls{
 		button{
 			@extend .button;
 			background-color: $colorBlue;
+			transition: all 0.4s ease;
+
+			&:hover{
+				background-color: $colorOrange;
+			}
 		}
 		
 		padding-left: 15px;
 		padding-top: 10px;
 		padding-bottom: 60px;
-		border-bottom: 2px solid lighten($colorGray, 30%);
+		border-bottom: 1px solid lighten($colorGray, 30%);
 	}
 
 

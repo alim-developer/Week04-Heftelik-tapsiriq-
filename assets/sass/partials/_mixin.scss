@@ -169,7 +169,7 @@ $font-size: 14px;
 				width: 139px;
 				height: 42px;
 				background-color: $colorBlue;
-
+				transition: all 0.4s ease;
 				&:hover{
 					background-color: $colorOrange;
 				}

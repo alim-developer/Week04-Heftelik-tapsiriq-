@@ -4,20 +4,26 @@
 	position: relative;
 
 	.container{
-		padding: 70px 0;
-		border-bottom: 2px solid lighten($colorGray, 30%);
+		padding-top: 70px;
+		padding-bottom: 50px;
+		border-bottom: 1px solid lighten($colorGray, 30%);
 		.logos img{
 
-			margin-left: 15px;
+			margin-left: 10px;
 			margin-bottom: 15px;
 		}
 		.menu{
 			ul {
 				padding: 0px;
+
 				li{
 					list-style:none;
 					line-height: 25px;
 					text-transform: $upper;
+
+					&:last-child{
+						margin-bottom: 20px;
+					}
 					a{	
 						display: block;
 						padding: 2px 10px;
@@ -25,9 +31,23 @@
 						color:$colorGray;
 						border-radius: 15px;
 						font-size: $font-size;
+						transition: all 0.3s ease;
 						&:hover{ 
 							background: $colorBlue;
 							color: $colorWhite;
+
+							span{
+								color: $colorWhite;
+							}
+
+							i{
+								color:$colorWhite;
+
+								&:hover{
+									color: lighten($colorGray, 15%);
+								}
+
+							}
 						}
 
 						span{
@@ -37,23 +57,17 @@
 						}
 					}
 
-					i{	
-
-						color: $colorGray;
-
-						&:first-child{
-							margin-left: 10px;
-						}
-
-						&:hover {
-							color: darken($colorGray, 30%);
-						}
-					}
 				}
 			}
 			.g{
 				margin-top: 30px;
 			}
+
+			@media screen and (max-width:480px), (min-width:480px) and (max-width: 762px){
+					.g{
+						margin-top: -10px;
+					}
+				}
 		}
 
 		.contact{
@@ -65,6 +79,11 @@
 					text-transform: $upper;
 					color: $colorGray;
 					font-size: $font-size;
+					padding: 0 10px;
+
+					&:last-child{
+						margin-bottom: 20px;
+					}
 					span{
 						color: $colorBlack;
 					}
@@ -85,6 +104,7 @@
 				li{
 					list-style:none;
 					line-height: 29px;
+					padding: 0 10px;
 					color: $colorBlack;
 					font-size: $font-size +4;
 
@@ -94,11 +114,28 @@
 						font-size: $font-size;
 						margin-bottom: 5px;
 					}
+
+					&:last-child{
+						margin-bottom: 20px;
+					}
 				}
 
 
 				.search{
 					@extend .searchButton;
+					margin-left: 10px;
+					
+
+					&:hover{
+						input, button{
+							transition: all 0.3s ease;
+							border-color: $colorOrange;
+						}
+						button{
+							transition: all 0.3s ease;
+							background-color: $colorOrange;
+						}
+					}					
 				}
 			}
 		}
@@ -109,10 +146,10 @@
 	.bord{
 		width: 0px;
 		height: 0px;
-		border-top:120px solid transparent;
-		border-bottom: 120px solid $colorOrange;
-		border-left: 180px solid $colorOrange;
-		border-right: 180px solid transparent;
+		border-top:90px solid transparent;
+		border-bottom: 90px solid $colorOrange;
+		border-left: 140px solid $colorOrange;
+		border-right: 140px solid transparent;
 	
 		position: absolute; 
 		bottom: 0;
@@ -142,10 +179,10 @@
 	.bord2{
 		width: 0px;
 		height: 0px;
-		border-top:160px solid transparent;
-		border-bottom: 160px solid $colorBlue;
-		border-left: 220px solid transparent;
-		border-right: 220px solid $colorBlue;
+		border-top:100px solid transparent;
+		border-bottom: 100px solid $colorBlue;
+		border-left: 150px solid transparent;
+		border-right: 150px solid $colorBlue;
 	
 		position: absolute; 
 		bottom: 0;

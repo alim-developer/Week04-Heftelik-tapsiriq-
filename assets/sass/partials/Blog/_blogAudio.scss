@@ -13,23 +13,25 @@
 			float: left;
 			margin-right: 10px;
 			background-color: $colorBlue;
-			&:first-child{
+			transition: all 0.4s ease;
+			&:hover{
 				background-color: $colorOrange;
 			}
 
-			p{	
+			a{	
+				display: block;
 				padding:0;
 				margin: 0;
 				color: $colorWhite;
 				font-size: $font-size +4;
 				line-height: 40px;
-
+				text-decoration: none;
 			
 			}
 			&:nth-child(4){
 				background-color: transparent;
 
-				p{
+				a{
 					color:#23282f;
 				}
 			}

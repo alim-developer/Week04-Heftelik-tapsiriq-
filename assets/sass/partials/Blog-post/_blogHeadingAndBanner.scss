@@ -1,20 +1,30 @@
 
+#blogHeadingAndBanner{
+	
+	.container{ 
+		padding-top:100px;
+		border-bottom: 1px solid lighten($colorGray, 30%);
+		
 
-#blogHeading{
-	.container{
-
+		.im img{
+			width: 100%;
+		}
+		
+		
 		
 		.left{
 			h1{
-				padding-left: 15px;
 				font-size: $font-size+14;
+				margin: 0;
+				margin-top: 30px;
 				font-weight: Bold;
 			}
 
 			h4{
 				font-size: $font-size +1;
-				padding-left: 16px;
 				font-weight: bold;
+				margin: 0px;
+				margin-top: 10px;
 				text-transform: $upper;
 				span{
 					color: $colorOrange;
@@ -24,43 +34,47 @@
 			
 			p{
 				color:$colorGray;
-				padding:30px 16px;
+				padding:25px 0px;
+
+				line-height: 25px;
 			}
 
 			ul{
-				padding-left: 100px;
+				padding-left: 80px;
 				@extend .ul;
 
 				li{	
 
-					font-size: $font-size -1;
+					font-size: $font-size - 1;
 					i{
 						margin-right: 10px;
 						color: $colorOrange;
 					}
 
 				}
-
-
-
 			}
 
 			.author{
-				width: 845px;
-				height: 191px;
+				width: 100%;
+				min-height: 191px;
 				background-color: $backgroundColorBlue;
-				padding: 40px;
+				padding: 30px 40px;
 				margin-top: 35px;
 				margin-bottom: 70px;
-
+				
 				
 
 				img {
 					float: left;
+					margin-left: 20px;
 					margin-right: 40px;
 				}
 				.madonna{
-					padding: 20px 0;
+					padding-top: 20px;
+
+					p{
+						padding-bottom: 0;
+					}
 
 					h3{
 						font-size: $font-size +1;
@@ -76,10 +90,76 @@
 				}
 			}
 		}
+		
+		
+		.search{
+			@extend .searchButton;
+			input{
+				border-right: none;
+				text-transform: none;
+			}
+			button{
+				background-color: $colorWhite;
+				border:1px solid $colorBlue;
+				border-left:none;
+			}
+
+			&:hover{
+				input, button{
+					border-color: $colorOrange;
+				}
+			}
+
+
+			img{
+				margin-top: 10px;
+				width: 15px;
+			}
+		}
+
+		h4{
+			margin:0;
+			margin-top: 40px;
+			font-size: $font-size + 4;
+		}
+
+		ul{
+			margin:0;
+			padding:0 13px;
+
+			li{
+				list-style:none;
+				line-height: 30px;
+				text-transform: $upper;
+				font-weight: bold;
+				padding: 5px 0;
+
+
+				a{	
+					display:block;
+					color: $colorGray;
+					text-decoration: none;
+					padding: 0 5px;
+					border-radius: 22px;
+					transition: all 0.4s ease;
+					&:hover{
+						background-color:$colorBlue;
+						color:$colorWhite;
+						
+					}
+
+					i{	
+						line-height: 30px;
+						float: right;
+					}
+				}
+			}
+		}
+
+
 
 
 		.right{
-			padding-left:50px;
 
 			h4{
 				padding:15px;
@@ -105,7 +185,8 @@
 
 
 			.business{
-				margin-left:15;
+				min-height: 100px;
+				padding: 0 15px 50px 15px;
 
 				.busy{
 					width: 95px;
@@ -114,6 +195,11 @@
 					float:left;
 					margin-right: 10px;
 					margin-bottom: 10px;
+					transition: all 0.4s ease;
+					&:hover{
+						background-color: $colorOrange;
+						transform: scale(1.05);
+					}
 
 
 				}
@@ -145,6 +231,8 @@
 				}
 
 				h4{
+					
+					margin: 10px 0;
 					padding-left:0;
 
 				}

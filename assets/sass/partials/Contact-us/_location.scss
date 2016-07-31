@@ -4,7 +4,7 @@
 	.container{
 
 		padding: 70px 0;
-		border-bottom: 2px solid lighten($colorGray, 30%);
+		border-bottom: 1px solid lighten($colorGray, 30%);
 		h1{
 			font-size: $font-size+14;
 			font-weight: Bold;
@@ -28,7 +28,7 @@
 		p{	margin: 0;
 			color: $backgroundColorGray;
 			font-weight: bold;
-			font-size: $font-size +2;
+			font-size: $font-size ;
 			text-transform: $upper;
 		}
 
@@ -38,8 +38,17 @@
 			border:2px solid $colorBlue;
 			border-radius: 50%;
 			padding: 15px;
-			margin: 20 auto;
+			margin: 20px auto;
+			transition: all 0.3s ease;
 
+			&:hover{
+				border-color: $colorOrange;
+			}
+
+		}
+
+		.pad{
+			padding: 0px 40px;
 		}
 
 	}

@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5816,7 +5817,7 @@ button.close {
 
 .button, #features .container button {
   padding: 8px 20px;
-  font-size: 14px +0.5;
+  font-size: 14.5px;
   border: none;
   border-radius: 22px;
   letter-spacing: 2px;
@@ -5889,6 +5890,19 @@ button.close {
           #menu .container-fluid .navbar .container .main ul li a:hover {
             background-color: #29c2e1;
             color: #fff; }
+        #menu .container-fluid .navbar .container .main ul li button {
+          display: block;
+          color: #93a1a7;
+          padding: 6px 20px;
+          border: none;
+          text-transform: uppercase;
+          font-size: 14.5px;
+          font-weight: bold;
+          border-radius: 22px;
+          transition: all 0.5s ease; }
+          #menu .container-fluid .navbar .container .main ul li button:hover {
+            background-color: #29c2e1;
+            color: #fff; }
 
 #slider .container-fluid {
   background-color: #8d8d8d;
@@ -5910,7 +5924,10 @@ button.close {
     background-color: #29c2e1;
     border-radius: 3px;
     padding: 15px 28px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    transition: all 0.4s ease; }
+    #slider .container-fluid .contus button:hover {
+      background-color: #f69b37; }
   #slider .container-fluid .container {
     padding-top: 290px;
     min-height: 750px;
@@ -5961,11 +5978,14 @@ button.close {
       border-radius: 3px;
       width: 21%;
       font-weight: bold;
-      height: 40px; }
+      height: 40px;
+      transition: all 0.2s ease; }
+      #slider .container-fluid .newsLetter button:hover {
+        box-shadow: 0px 0px 5px #23282f inset; }
 
 #WeAre .container {
-  padding: 95px 0;
-  padding-bottom: 135px; }
+  padding-top: 95px;
+  padding-bottom: 85px; }
   #WeAre .container .what {
     min-width: 10px;
     color: #fff;
@@ -5986,15 +6006,15 @@ button.close {
       width: 100%;
       height: 240px;
       background-color: #e5eef0;
-      padding-bottom: 25px; }
+      margin-bottom: 45px; }
     #WeAre .container .we .forImage {
-      width: 475px;
+      width: 80%;
       height: 308px;
       background-color: #93a1a7;
       margin: 0 auto;
       position: absolute;
       top: -35;
-      left: 65; }
+      left: 10%; }
     #WeAre .container .we p {
       font-size: 14px;
       color: #778990; }
@@ -6008,11 +6028,15 @@ button.close {
       border: none;
       border-radius: 3px;
       font-weight: bold;
-      margin-top: 80px; }
+      margin-top: 80px;
+      transition: all 0.4s ease; }
+      #WeAre .container .we button:hover {
+        background-color: #29c2e1; }
 
 #features .container {
+  padding: 0;
   padding: 80px 0;
-  border-bottom: 2px solid #e7eaec; }
+  border-bottom: 1px solid #e7eaec; }
   #features .container h1, #features .container #slider .container-fluid .contus h4, #slider .container-fluid .contus #features .container h4 {
     font-size: 30px;
     padding-left: 15px;
@@ -6035,7 +6059,10 @@ button.close {
       line-height: 22px; }
   #features .container button {
     background-color: #29c2e1;
-    margin-top: 70px; }
+    margin-top: 70px;
+    transition: all 0.4s ease; }
+    #features .container button:hover {
+      background-color: #f69b37; }
 
 .services {
   background-color: #e5eef0; }
@@ -6048,12 +6075,14 @@ button.close {
     display: inline;
     text-transform: uppercase; }
   .services h1, .services #slider .container-fluid .contus h4, #slider .container-fluid .contus .services h4 {
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 20px; }
   .services .backgroundBlue {
     width: 66px;
     height: 66px;
     border: 1px solid #23282f;
-    background-color: #e5eef0; }
+    background-color: #e5eef0;
+    transition: all 0.3s ease; }
     .services .backgroundBlue:hover {
       background-color: #29c2e1; }
     .services .backgroundBlue img {
@@ -6139,7 +6168,8 @@ button.close {
     text-transform: uppercase; }
   #pricing .container .thumbnail {
     padding: 30px 0;
-    margin-top: 35px; }
+    margin-top: 35px;
+    transition: all 0.3s ease; }
     #pricing .container .thumbnail:hover {
       box-shadow: 0px 0px 70px #e5eef0; }
     #pricing .container .thumbnail h4 {
@@ -6184,6 +6214,7 @@ button.close {
     font-weight: bold;
     width: 141px;
     height: 46px;
+    transition: all 0.4s ease;
     position: relative;
     top: -40px; }
     #pricing .container button:hover {
@@ -6205,15 +6236,15 @@ button.close {
   #team .container .thumbnail {
     margin-top: 10px;
     padding: 0; }
-    #team .container .thumbnail .img {
-      width: 263px;
-      height: 276px;
-      background-color: #8d8d8d; }
+    #team .container .thumbnail img {
+      width: 100%; }
     #team .container .thumbnail .caption {
-      padding: 25px; }
+      padding: 25px;
+      overflow: hidden; }
       #team .container .thumbnail .caption p {
         font-size: 14px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        word-wrap: break-word; }
         #team .container .thumbnail .caption p:nth-child(2) {
           color: #f69b37; }
       #team .container .thumbnail .caption i {
@@ -6238,15 +6269,19 @@ button.close {
     margin: 0; }
   #team .container .thumbnail {
     margin-top: 55px; }
-    #team .container .thumbnail .caption:hover {
-      background-color: #29c2e1;
-      color: #fff; }
-      #team .container .thumbnail .caption:hover p {
-        color: #23282f; }
-      #team .container .thumbnail .caption:hover i {
+    #team .container .thumbnail img {
+      width: 100%; }
+    #team .container .thumbnail .caption {
+      transition: all 0.3s ease; }
+      #team .container .thumbnail .caption:hover {
+        background-color: #29c2e1;
         color: #fff; }
-        #team .container .thumbnail .caption:hover i:hover {
-          color: #afb9be; }
+        #team .container .thumbnail .caption:hover p {
+          color: #23282f; }
+        #team .container .thumbnail .caption:hover i {
+          color: #fff; }
+          #team .container .thumbnail .caption:hover i:hover {
+            color: #afb9be; }
 
 #blogPost .container {
   padding-top: 90px;
@@ -6308,43 +6343,54 @@ button.close {
     border-radius: 3px;
     font-weight: bold;
     width: 141px;
-    height: 45px; }
+    height: 45px;
+    transition: all 0.4s ease; }
     #blogPost .container button:hover {
       background-color: #29c2e1; }
 
 #footer {
   position: relative; }
   #footer .container {
-    padding: 70px 0;
-    border-bottom: 2px solid #e7eaec; }
+    padding-top: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e7eaec; }
+    #footer .container .logos img {
+      margin-left: 10px;
+      margin-bottom: 15px; }
     #footer .container .menu ul {
       padding: 0px; }
       #footer .container .menu ul li {
         list-style: none;
         line-height: 25px;
         text-transform: uppercase; }
+        #footer .container .menu ul li:last-child {
+          margin-bottom: 20px; }
         #footer .container .menu ul li a {
           display: block;
           padding: 2px 10px;
           text-decoration: none;
           color: #93a1a7;
           border-radius: 15px;
-          font-size: 14px; }
+          font-size: 14px;
+          transition: all 0.3s ease; }
           #footer .container .menu ul li a:hover {
             background: #29c2e1;
             color: #fff; }
+            #footer .container .menu ul li a:hover span {
+              color: #fff; }
+            #footer .container .menu ul li a:hover i {
+              color: #fff; }
+              #footer .container .menu ul li a:hover i:hover {
+                color: #bdc6c9; }
           #footer .container .menu ul li a span {
             color: #23282f;
             font-size: 18px;
             text-transform: none; }
-        #footer .container .menu ul li i {
-          color: #93a1a7; }
-          #footer .container .menu ul li i:first-child {
-            margin-left: 10px; }
-          #footer .container .menu ul li i:hover {
-            color: #485459; }
     #footer .container .menu .g {
       margin-top: 30px; }
+    @media screen and (max-width: 480px), (min-width: 480px) and (max-width: 762px) {
+      #footer .container .menu .g {
+        margin-top: -10px; } }
     #footer .container .contact ul {
       padding: 0px; }
       #footer .container .contact ul li {
@@ -6352,7 +6398,10 @@ button.close {
         line-height: 29px;
         text-transform: uppercase;
         color: #93a1a7;
-        font-size: 14px; }
+        font-size: 14px;
+        padding: 0 10px; }
+        #footer .container .contact ul li:last-child {
+          margin-bottom: 20px; }
         #footer .container .contact ul li span {
           color: #23282f; }
         #footer .container .contact ul li .cont {
@@ -6363,6 +6412,7 @@ button.close {
       #footer .container .newsLetter ul li {
         list-style: none;
         line-height: 29px;
+        padding: 0 10px;
         color: #23282f;
         font-size: 18px; }
         #footer .container .newsLetter ul li:nth-child(2) {
@@ -6370,14 +6420,24 @@ button.close {
           color: #93a1a7;
           font-size: 14px;
           margin-bottom: 5px; }
+        #footer .container .newsLetter ul li:last-child {
+          margin-bottom: 20px; }
+      #footer .container .newsLetter ul .search {
+        margin-left: 10px; }
+        #footer .container .newsLetter ul .search:hover input, #footer .container .newsLetter ul .search:hover button {
+          transition: all 0.3s ease;
+          border-color: #f69b37; }
+        #footer .container .newsLetter ul .search:hover button {
+          transition: all 0.3s ease;
+          background-color: #f69b37; }
 
 .bord {
   width: 0px;
   height: 0px;
-  border-top: 160px solid transparent;
-  border-bottom: 160px solid #f69b37;
-  border-left: 220px solid #f69b37;
-  border-right: 220px solid transparent;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid #f69b37;
+  border-left: 140px solid #f69b37;
+  border-right: 140px solid transparent;
   position: absolute;
   bottom: 0;
   left: 0; }
@@ -6393,10 +6453,10 @@ button.close {
   #copyRight .bord2 {
     width: 0px;
     height: 0px;
-    border-top: 160px solid transparent;
-    border-bottom: 160px solid #29c2e1;
-    border-left: 220px solid transparent;
-    border-right: 220px solid #29c2e1;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #29c2e1;
+    border-left: 150px solid transparent;
+    border-right: 150px solid #29c2e1;
     position: absolute;
     bottom: 0;
     right: 0; }

@@ -20,21 +20,39 @@
 				<nav class="navbar navbar-default">
 					<div class="container">
 						<div class="navbar-header">
-							<div class="navbar-brand">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">
 								<img src="assets/images/Logo.png">
-							</div>
+							</a>
 						</div>
 						
-						<div class="main">
+						<div class="collapse navbar-collapse main " id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About us</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="#">Service</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Pages</a></li>
-								<li><a href="#">Contact us</a></li>
+								<li><a href="Home-page.html">Home</a></li>
+								<li><a href="About-us.html">About us</a></li>
+								<li><a href="News.html">News</a></li>
+								<li><a href="Portfolio.html">Portfolio</a></li>
+								<li><a href="Servicess.html">Service</a></li>
+								<li><a href="Blog.html">Blog</a></li>
+								<li class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									Pages
+									<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										<li><a href="Home-page-two.html">Home page two</a></li>
+										<li><a href="Blog-post.html">Blog post</a></li>
+										<li><a href="News-details.html">News-details</a></li>
+										<li><a href="Portfolio-two.html">Portfolio two</a></li>
+										<li><a href="Services-two.html">Services-two</a></li>
+									</ul>
+								</li>
+								<li><a href="Contact-us.html">Contact us</a></li>
 							</ul>
 						</div>
 					</div>
@@ -45,12 +63,13 @@
 		<section id="slider">
 			<div class="container-fluid text-center">
 				<div class="container">
-					<div class="row contus ">
+					<div class="row contus">
 						<h4>Boost up your</h4>
 						<h1>Local Business</h1>
 						<button class="button">Contact Us</button>
 					</div>
 					
+					<!-- cox alindirmaga calisdim. Responsivliyini duzelde bilmedim -->
 					<div class="newsLetter">
 						<form>
 							<h3>Newsletter  :</h3>
@@ -65,10 +84,10 @@
 		<section id="WeAre">
 			<div class="container">
 				<div class="row text-center">
-					<div class="col-md-12">
+					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="what">What</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-12 col-sm-12 col-xs-12">
 						<h1>We are?</h1>
 					</div>
 				</div>
@@ -88,16 +107,15 @@
 		</section>
 		<section id="features">
 			<div class="services">
-				<div class="container">
+				<div class="container" style="padding-top: 100px; padding-bottom: 90px">
 					<div class="row text-center">
-						<div class="col-md-12">
+						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="sticker">Our</div>
 						</div>
 					</div>
 					<div class="row text-center">
 						<div class="col-md-12 col-sm-12 col-xs-12">
-							<h1>Features</h1>
-							<h4>Some of Our Features</h4>
+							<h1>Services</h1>
 						</div>
 					</div>
 					<div class="row">
@@ -189,23 +207,20 @@
 				</div>
 			</div>
 		</section>
-
 		<section id="clients">
 			<div class="container text-center">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="sticker">Happy</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-12 col-sm-12 col-xs-12">
 						<h1>Clients</h1>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="circle text-center"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
 					</div>
 				</div>
-
 				<div class="row ">
-
 					<div class="col-md-2 col-sm-2 col-xs-2 text-right">
 						<i class="fa fa-quote-left" aria-hidden="true"></i>
 					</div>
@@ -216,17 +231,16 @@
 					</div>
 					<div class="col-md-2 col-sm-2 col-xs-2  quote text-left">
 						<i class="fa fa-quote-left" aria-hidden="true"></i>
-					</div>					
+					</div>
 				</div>
-
 				<div class="row by">
-					<div class="col-md-12">
+					<div class="col-md-12 col-sm-12 col-xs-12">
 						<p>by</p>
 						<p>Sunitha Danial</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="altibucaqli">
 							<img src="assets/images/Home-page-two/altibucaqli.png">
 							<img src="assets/images/Home-page-two/altibucaqli.png">
@@ -238,228 +252,206 @@
 				</div>
 			</div>
 		</section>
-
 		<section id="pricing">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<div class="sticker">Our</div>
-					<h1>Pricing</h1>
-				</div>
-			</div>
-
-			<div class="row text-center">
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="thumbnail">
-						<div class="capture">
-							<h4>Personal</h4>
-
-							<h5>From <span>$100</span> per month</h5>
-
-							<p>	Business Support
-								Business Analysing
-								24 hour support</p>
-						
-
-						</div>
-					</div>
-					<button class="button">START NOW</button>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="thumbnail shadow">
-						<div class="capture">
-							<h4>Business</h4>
-							
-							<h5>From <span>$200</span> per month</h5>
-
-							<p>	Business Support
-								Business Analysing
-								24 hour support
-								</p>
-							
-
-						</div>
-					</div>
-					<button class="button">START NOW</button>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="thumbnail">
-						<div class="capture">
-							<h4>Gold</h4>
-							
-							<h5>From <span>$250</span> per month</h5>
-
-							<p>	24 hour support
-								Client management
-								Keeping business</p>
-							
-
-						</div>
-					</div>
-					<button class="button">START NOW</button>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="thumbnail">
-						<div class="capture">
-							<h4>Ultimate</h4>
-							
-							<h5>From <span>$300</span> per month</h5>
-							
-							<p>	24 hour support
-								Client management
-								Keeping business
-								</p>
-							
-
-						</div>
-
-					</div>
-					<button class="button">START NOW</button>
-				</div>
-			</div>
-		</div>
-	</section>
-		
-
-	<section id="team">
-		<div class="container">
-			<div class="row text-center">
-				<div class="sticker">Our</div>
-				<h1>Team</h1>
-				
-			</div>
-
-			<div class="row">
-				<div class="col-md-3 col-sm-3 col-xs-6">
-					<div class="thumbnail">
-						<img src="assets/images/image2.png">
-						<div class="caption">
-							<p>Mr. Ramgopalavarma</p>
-							<p>Data Specialist</p>
-
-							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6">
-					<div class="thumbnail">
-						<img src="assets/images/image2.png">
-						<div class="caption">
-							<p>Madhavikutti Menon</p>
-							<p>Client Support</p>
-
-							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6">
-					<div class="thumbnail">
-						<img src="assets/images/image2.png">
-						<div class="caption">
-							<p>Dr.Venkittaraman</p>
-							<p>Client Management</p>
-
-							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6">
-					<div class="thumbnail">
-						<img src="assets/images/image2.png">
-						<div class="caption">
-							<p>George Danial</p>
-							<p>Communication</p>
-
-							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="blogPost">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<div class="sticker">Our</div>
-					<h1>Blog Post</h1>
-				</div>
-			</div>
-			<div class="row backend text-center">
-				<div>
-					<h1>15</h1>
-					<p>July</p>
-				</div>
-			</div>
-
-			<div class="row postHead">
-				<div class="col-md-1"></div>
-				<div class="col-md-5">
-					<h4>Blog Heading Here</h4>
-				</div>
-				<div class="col-md-5 text-right">
-					<i class="fa fa-user" aria-hidden="true"></i>
-					<span>By admin</span>
-					<i class="fa fa-comments-o" aria-hidden="true"></i>
-					<span>20 Comment</span>
-				</div>
-				<div class="col-md-1"></div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-10">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-
-					<button>Read More</button>
-				</div>
-				<div class="col-md-1"></div>
-			</div>
-
-		</div>
-	</section>
-
-	<section id="footer">
-		<div class="container-fluid">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2 col-sm-4 col-xs-12">
-						<img src="assets/images/Logo.png">
+					<div class="col-md-12 text-center">
+						<div class="sticker">Our</div>
+						<h1>Pricing</h1>
 					</div>
-					<div class="col-md-2 col-sm-4 col-xs-12 menu">
-						<ul>
-							<li><a href="#"><span style="color: white;">Menu</span></a></li>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Portfolio</a></li>
-						</ul>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="thumbnail">
+							<div class="capture">
+								<h4>Personal</h4>
+								<h5>From <span>$100</span> per month</h5>
+								<p>	Business Support
+									Business Analysing
+								24 hour support</p>
+								
+							</div>
+						</div>
+						<button class="button">START NOW</button>
 					</div>
-					<div class="col-md-2 col-sm-4 col-xs-12 menu"><ul>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="thumbnail shadow">
+							<div class="capture">
+								<h4>Business</h4>
+								
+								<h5>From <span>$200</span> per month</h5>
+								<p>	Business Support
+									Business Analysing
+									24 hour support
+								</p>
+								
+							</div>
+						</div>
+						<button class="button">START NOW</button>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="thumbnail">
+							<div class="capture">
+								<h4>Gold</h4>
+								
+								<h5>From <span>$250</span> per month</h5>
+								<p>	24 hour support
+									Client management
+								Keeping business</p>
+								
+							</div>
+						</div>
+						<button class="button">START NOW</button>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="thumbnail">
+							<div class="capture">
+								<h4>Ultimate</h4>
+								
+								<h5>From <span>$300</span> per month</h5>
+								
+								<p>	24 hour support
+									Client management
+									Keeping business
+								</p>
+								
+							</div>
+						</div>
+						<button class="button">START NOW</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="team">
+			<div class="container">
+				<div class="row text-center">
+					<div class="sticker">Our</div>
+					<h1>Team</h1>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="thumbnail">
+							<img src="assets/images/image2.png">
+							<div class="caption">
+								<p>Mr. Ramgopalavarma</p>
+								<p>Data Specialist</p>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="thumbnail">
+							<img src="assets/images/image2.png">
+							<div class="caption">
+								<p>Madhavikutti Menon</p>
+								<p>Client Support</p>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="thumbnail">
+							<img src="assets/images/image2.png">
+							<div class="caption">
+								<p>Dr.Venkittaraman</p>
+								<p>Client Management</p>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="thumbnail">
+							<img src="assets/images/image2.png">
+							<div class="caption">
+								<p>George Danial</p>
+								<p>Communication</p>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="blogPost">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+						<div class="sticker">Our</div>
+						<h1>Blog Post</h1>
+					</div>
+				</div>
+				<div class="row backend text-center">
+					<div>
+						<h1>15</h1>
+						<p>July</p>
+					</div>
+				</div>
+				<div class="row postHead">
+					<div class="col-md-1 hidden-sm hidden-xs"></div>
+					<div class="col-md-5 col-sm-5 col-xs-5">
+						<h4>Blog Heading Here</h4>
+					</div>
+					<div class="col-md-5 col-sm-5 col-xs-5 text-right">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<span>By admin</span>
+						<i class="fa fa-comments-o" aria-hidden="true"></i>
+						<span>20 Comment</span>
+					</div>
+					<div class="col-md-1 hidden-sm hidden-xs"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-1 hidden-sm hidden-xs"></div>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+						<button>Read More</button>
+					</div>
+					<div class="col-md-1 hidden-sm hidden-xs"></div>
+				</div>
+			</div>
+		</section>
+		<section id="footer">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row logos">
+						<div class="col-md-2 col-sm-4 col-xs-12">
+							<img src="assets/images/Logo.png">
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-12 menu">
+							<ul>
+								<li><a href="#"><span style="color: white;">Menu</span></a></li>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Portfolio</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-12 menu"><ul>
 							
 							<li class="g"><a href="#">Service</a></li>
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">Blog Pages</a></li>
-							<li>
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<i class="fa fa-google-plus" aria-hidden="true"></i>
+							<li><a href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+									<i class="fa fa-google-plus" aria-hidden="true"></i>
+								</a>
 							</li>
 						</ul></div>
-					<div class="col-md-3 col-sm-6 col-xs-12 contact">
-						<ul>
-							<li><span class="cont" style="color: white;">Contact</span></li>
-							<li><span style="color: white;">Address :</span> Geethanjali street
-Second flor : 88569</li>
+						<div class="col-md-3 col-sm-6 col-xs-12 contact">
+							<ul>
+								<li><span class="cont" style="color: white;">Contact</span></li>
+								<li><span style="color: white;">Address :</span> Geethanjali street
+							Second flor : 88569</li>
 							<li><span style="color: white;">Phone :</span> +988 9956 222</li>
 							
 							<li><span style="color: white;">Email :</span> info@business.com</li>
@@ -481,23 +473,16 @@ Second flor : 88569</li>
 					</div>
 				</div>
 			</div>
-
-
 			
-	</section>
-
-
-	<section id="copyRight">
-		<div class="container">
-			<div class="row text-center">
-				<p>&copy; 2015 Businness LTD. Allright reserved</p>
+		</section>
+		<section id="copyRight">
+			<div class="container">
+				<div class="row text-center">
+					<p>&copy; 2015 Businness LTD. Allright reserved</p>
+				</div>
 			</div>
-		</div>
-
-		
-	</section>
-
-
+			
+		</section>
 		
 	</body>
 </html>

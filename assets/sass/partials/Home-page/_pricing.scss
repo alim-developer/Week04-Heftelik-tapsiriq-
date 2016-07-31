@@ -4,16 +4,19 @@
 		
 		h1{
 			@include forFont;
+			margin-left: 15px;
 		}
 
 		h3{
 			@include forFontMini;
-			margin:0px;		
+			margin:0px;	
+			margin-left: 15px;	
 		}
-
+		
 		.thumbnail{
 			padding: 30px 0;
 			margin-top:35px;
+			transition: all 0.3s ease;
 			
 			&:hover{
 				box-shadow: 0px 0px 70px $backgroundColorBlue;
@@ -64,6 +67,7 @@
 			button{
 				margin: 10px 0;
 				background-color: $colorBlue;
+				transition: all 0.4s ease;
 
 				&:hover{
 					background-color: $colorOrange;

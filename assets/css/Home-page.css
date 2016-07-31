@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5816,7 +5817,7 @@ button.close {
 
 .button, #features .container button {
   padding: 8px 20px;
-  font-size: 14px +0.5;
+  font-size: 14.5px;
   border: none;
   border-radius: 22px;
   letter-spacing: 2px;
@@ -5854,7 +5855,7 @@ button.close {
 /* Home-page h1 ucun */
 #contact .container-fluid {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   background-color: #e5eef0; }
   #contact .container-fluid .clearFix {
     clear: both; }
@@ -5869,10 +5870,10 @@ button.close {
       float: right;
       color: #93a1a7;
       padding: 14px 0px;
-      padding-right: 28px; }
+      padding-right: 5%; }
       #contact .container-fluid ul li:first-child {
         padding-right: 0px;
-        padding-left: 28px;
+        padding-left: 5%;
         border-left: 1px solid #93a1a7; }
       #contact .container-fluid ul li i {
         font-size: 20px; }
@@ -5902,6 +5903,19 @@ button.close {
           border-radius: 22px;
           transition: all 0.5s ease; }
           #menu .container-fluid .navbar .container .main ul li a:hover {
+            background-color: #29c2e1;
+            color: #fff; }
+        #menu .container-fluid .navbar .container .main ul li button {
+          display: block;
+          color: #93a1a7;
+          padding: 6px 20px;
+          border: none;
+          text-transform: uppercase;
+          font-size: 14.5px;
+          font-weight: bold;
+          border-radius: 22px;
+          transition: all 0.5s ease; }
+          #menu .container-fluid .navbar .container .main ul li button:hover {
             background-color: #29c2e1;
             color: #fff; }
 
@@ -5991,7 +6005,8 @@ button.close {
       margin-left: 15px;
       margin-right: 30px;
       margin-bottom: 80px;
-      float: left; }
+      float: left;
+      transition: all 0.4s ease; }
       #startup .container .rightColm .back:hover {
         background-color: #f69b37; }
     #startup .container .rightColm h5 {
@@ -6002,7 +6017,10 @@ button.close {
       font-size: 14px; }
     #startup .container .rightColm .button, #startup #features .container .rightColm button, #features #startup .container .rightColm button {
       margin-top: 20px;
-      background-color: #29c2e1; }
+      background-color: #29c2e1;
+      transition: all 0.4s ease; }
+      #startup .container .rightColm .button:hover, #startup #features .container .rightColm button:hover, #features #startup .container .rightColm button:hover {
+        background-color: #f69b37; }
 
 #clients {
   background-color: #e5eef0; }
@@ -6048,7 +6066,8 @@ button.close {
         background-color: #93a1a7;
         float: left;
         margin: 0 5px;
-        position: relative; }
+        position: relative;
+        transition: all 0.3s ease; }
         #clients .container .circleSize div:hover {
           background-color: #29c2e1; }
         #clients .container .circleSize div:first-child:after {
@@ -6061,6 +6080,7 @@ button.close {
           font-size: 14px;
           font-weight: bold;
           padding-top: 55px;
+          transition: all 0.3s ease;
           position: absolute;
           top: -150px;
           left: -195px; }
@@ -6074,6 +6094,7 @@ button.close {
           font-size: 14px;
           font-weight: bold;
           padding-top: 55px;
+          transition: all 0.3s ease;
           position: absolute;
           top: -150px;
           left: -60px; }
@@ -6087,6 +6108,7 @@ button.close {
           font-size: 14px;
           font-weight: bold;
           padding-top: 55px;
+          transition: all 0.3s ease;
           position: absolute;
           top: -150px;
           left: 77px; }
@@ -6098,7 +6120,8 @@ button.close {
   #features .container .backgroundBlue {
     width: 68px;
     height: 68px;
-    background-color: #e5eef0; }
+    background-color: #e5eef0;
+    transition: all 0.4s ease; }
     #features .container .backgroundBlue:hover {
       background-color: #f69b37; }
     #features .container .backgroundBlue img {
@@ -6123,8 +6146,9 @@ button.close {
     right: 120px; }
 
 #features .container {
+  padding: 0;
   padding: 80px 0;
-  border-bottom: 2px solid #e7eaec; }
+  border-bottom: 1px solid #e7eaec; }
   #features .container h1, #features .container #slider .container-fluid .row h4, #slider .container-fluid .row #features .container h4 {
     font-size: 30px;
     padding-left: 15px;
@@ -6137,7 +6161,6 @@ button.close {
   #features .container .text {
     padding-top: 45px; }
     #features .container .text img {
-      margin-bottom: -7px;
       float: right; }
     #features .container .text h3 {
       margin: 0;
@@ -6148,21 +6171,27 @@ button.close {
       line-height: 22px; }
   #features .container button {
     background-color: #29c2e1;
-    margin-top: 70px; }
+    margin-top: 70px;
+    transition: all 0.4s ease; }
+    #features .container button:hover {
+      background-color: #f69b37; }
 
 #pricing .container {
   padding: 85px 0; }
   #pricing .container h1, #pricing .container #slider .container-fluid .row h4, #slider .container-fluid .row #pricing .container h4 {
     font-size: 28px;
     font-weight: bold;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-left: 15px; }
   #pricing .container h3 {
     text-transform: uppercase;
     font-size: 18px;
-    margin: 0px; }
+    margin: 0px;
+    margin-left: 15px; }
   #pricing .container .thumbnail {
     padding: 30px 0;
-    margin-top: 35px; }
+    margin-top: 35px;
+    transition: all 0.3s ease; }
     #pricing .container .thumbnail:hover {
       box-shadow: 0px 0px 70px #e5eef0; }
     #pricing .container .thumbnail h4 {
@@ -6196,7 +6225,8 @@ button.close {
       color: #93a1a7; }
     #pricing .container .thumbnail button {
       margin: 10px 0;
-      background-color: #29c2e1; }
+      background-color: #29c2e1;
+      transition: all 0.4s ease; }
       #pricing .container .thumbnail button:hover {
         background-color: #f69b37; }
 
@@ -6216,15 +6246,15 @@ button.close {
   #team .container .thumbnail {
     margin-top: 10px;
     padding: 0; }
-    #team .container .thumbnail .img {
-      width: 263px;
-      height: 276px;
-      background-color: #8d8d8d; }
+    #team .container .thumbnail img {
+      width: 100%; }
     #team .container .thumbnail .caption {
-      padding: 25px; }
+      padding: 25px;
+      overflow: hidden; }
       #team .container .thumbnail .caption p {
         font-size: 14px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        word-wrap: break-word; }
         #team .container .thumbnail .caption p:nth-child(2) {
           color: #f69b37; }
       #team .container .thumbnail .caption i {
@@ -6236,36 +6266,46 @@ button.close {
 #footer {
   position: relative; }
   #footer .container {
-    padding: 70px 0;
-    border-bottom: 2px solid #e7eaec; }
+    padding-top: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e7eaec; }
+    #footer .container .logos img {
+      margin-left: 10px;
+      margin-bottom: 15px; }
     #footer .container .menu ul {
       padding: 0px; }
       #footer .container .menu ul li {
         list-style: none;
         line-height: 25px;
         text-transform: uppercase; }
+        #footer .container .menu ul li:last-child {
+          margin-bottom: 20px; }
         #footer .container .menu ul li a {
           display: block;
           padding: 2px 10px;
           text-decoration: none;
           color: #93a1a7;
           border-radius: 15px;
-          font-size: 14px; }
+          font-size: 14px;
+          transition: all 0.3s ease; }
           #footer .container .menu ul li a:hover {
             background: #29c2e1;
             color: #fff; }
+            #footer .container .menu ul li a:hover span {
+              color: #fff; }
+            #footer .container .menu ul li a:hover i {
+              color: #fff; }
+              #footer .container .menu ul li a:hover i:hover {
+                color: #bdc6c9; }
           #footer .container .menu ul li a span {
             color: #23282f;
             font-size: 18px;
             text-transform: none; }
-        #footer .container .menu ul li i {
-          color: #93a1a7; }
-          #footer .container .menu ul li i:first-child {
-            margin-left: 10px; }
-          #footer .container .menu ul li i:hover {
-            color: #485459; }
     #footer .container .menu .g {
       margin-top: 30px; }
+    @media screen and (max-width: 480px), (min-width: 480px) and (max-width: 762px) {
+      #footer .container .menu .g {
+        margin-top: -10px; } }
     #footer .container .contact ul {
       padding: 0px; }
       #footer .container .contact ul li {
@@ -6273,7 +6313,10 @@ button.close {
         line-height: 29px;
         text-transform: uppercase;
         color: #93a1a7;
-        font-size: 14px; }
+        font-size: 14px;
+        padding: 0 10px; }
+        #footer .container .contact ul li:last-child {
+          margin-bottom: 20px; }
         #footer .container .contact ul li span {
           color: #23282f; }
         #footer .container .contact ul li .cont {
@@ -6284,6 +6327,7 @@ button.close {
       #footer .container .newsLetter ul li {
         list-style: none;
         line-height: 29px;
+        padding: 0 10px;
         color: #23282f;
         font-size: 18px; }
         #footer .container .newsLetter ul li:nth-child(2) {
@@ -6291,14 +6335,24 @@ button.close {
           color: #93a1a7;
           font-size: 14px;
           margin-bottom: 5px; }
+        #footer .container .newsLetter ul li:last-child {
+          margin-bottom: 20px; }
+      #footer .container .newsLetter ul .search {
+        margin-left: 10px; }
+        #footer .container .newsLetter ul .search:hover input, #footer .container .newsLetter ul .search:hover button {
+          transition: all 0.3s ease;
+          border-color: #f69b37; }
+        #footer .container .newsLetter ul .search:hover button {
+          transition: all 0.3s ease;
+          background-color: #f69b37; }
 
 .bord {
   width: 0px;
   height: 0px;
-  border-top: 160px solid transparent;
-  border-bottom: 160px solid #f69b37;
-  border-left: 220px solid #f69b37;
-  border-right: 220px solid transparent;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid #f69b37;
+  border-left: 140px solid #f69b37;
+  border-right: 140px solid transparent;
   position: absolute;
   bottom: 0;
   left: 0; }
@@ -6314,10 +6368,10 @@ button.close {
   #copyRight .bord2 {
     width: 0px;
     height: 0px;
-    border-top: 160px solid transparent;
-    border-bottom: 160px solid #29c2e1;
-    border-left: 220px solid transparent;
-    border-right: 220px solid #29c2e1;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #29c2e1;
+    border-left: 150px solid transparent;
+    border-right: 150px solid #29c2e1;
     position: absolute;
     bottom: 0;
     right: 0; }

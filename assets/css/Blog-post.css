@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5816,17 +5817,17 @@ button.close {
 
 .button {
   padding: 8px 20px;
-  font-size: 14px +0.5;
+  font-size: 14.5px;
   border: none;
   border-radius: 22px;
   letter-spacing: 2px;
   color: #fff; }
 
-.searchButton, #blogBanner .container .search, #footer .container .newsLetter ul .search {
+.searchButton, #blogHeadingAndBanner .container .search, #footer .container .newsLetter ul .search {
   width: 262px;
   height: 42px;
   background-color: #fff; }
-  .searchButton input, #blogBanner .container .search input, #footer .container .newsLetter ul .search input {
+  .searchButton input, #blogHeadingAndBanner .container .search input, #footer .container .newsLetter ul .search input {
     width: 220px;
     height: 42px;
     background: transparent;
@@ -5834,7 +5835,7 @@ button.close {
     text-indent: 15px;
     border: 1px solid #29c2e1;
     text-transform: uppercase; }
-  .searchButton button, #blogBanner .container .search button, #footer .container .newsLetter ul .search button {
+  .searchButton button, #blogHeadingAndBanner .container .search button, #footer .container .newsLetter ul .search button {
     width: 42px;
     height: 42px;
     float: right;
@@ -5842,18 +5843,19 @@ button.close {
     border: none;
     color: #fff; }
 
-.ul, #blogHeading .container .left ul {
+.ul, #blogHeadingAndBanner .container .left ul {
   padding: 0; }
-  .ul li, #blogHeading .container .left ul li {
+  .ul li, #blogHeadingAndBanner .container .left ul li {
     list-style: none;
     line-height: 40px;
     text-transform: uppercase;
     font-weight: bold;
     color: #93a1a7; }
 
+/* Home-page h1 ucun */
 #contact .container-fluid {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   background-color: #e5eef0; }
   #contact .container-fluid .clearFix {
     clear: both; }
@@ -5868,10 +5870,10 @@ button.close {
       float: right;
       color: #93a1a7;
       padding: 14px 0px;
-      padding-right: 28px; }
+      padding-right: 5%; }
       #contact .container-fluid ul li:first-child {
         padding-right: 0px;
-        padding-left: 28px;
+        padding-left: 5%;
         border-left: 1px solid #93a1a7; }
       #contact .container-fluid ul li i {
         font-size: 20px; }
@@ -5903,6 +5905,19 @@ button.close {
           #menu .container-fluid .navbar .container .main ul li a:hover {
             background-color: #29c2e1;
             color: #fff; }
+        #menu .container-fluid .navbar .container .main ul li button {
+          display: block;
+          color: #93a1a7;
+          padding: 6px 20px;
+          border: none;
+          text-transform: uppercase;
+          font-size: 14.5px;
+          font-weight: bold;
+          border-radius: 22px;
+          transition: all 0.5s ease; }
+          #menu .container-fluid .navbar .container .main ul li button:hover {
+            background-color: #29c2e1;
+            color: #fff; }
 
 #slider {
   margin-top: -20px; }
@@ -5910,6 +5925,7 @@ button.close {
     height: 310px;
     background-image: url(../images/slider.jpg);
     background-size: cover;
+    background-position: center;
     padding-top: 95px; }
     #slider .container-fluid .row h1, #slider .container-fluid .row h4 {
       font-size: 48px;
@@ -5922,126 +5938,138 @@ button.close {
       margin-bottom: 0px;
       padding-top: 0; }
 
-#blogBanner .container {
-  padding-top: 90px; }
-  #blogBanner .container img {
+#blogHeadingAndBanner .container {
+  padding-top: 100px;
+  border-bottom: 1px solid #e7eaec; }
+  #blogHeadingAndBanner .container .im img {
     width: 100%; }
-  #blogBanner .container .right {
-    padding-left: 50px; }
-  #blogBanner .container .search input {
-    border: 1px solid #e7eaec;
+  #blogHeadingAndBanner .container .left h1, #blogHeadingAndBanner .container .left #slider .container-fluid .row h4, #slider .container-fluid .row #blogHeadingAndBanner .container .left h4 {
+    font-size: 28px;
+    margin: 0;
+    margin-top: 30px;
+    font-weight: Bold; }
+  #blogHeadingAndBanner .container .left h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 10px;
+    text-transform: uppercase; }
+    #blogHeadingAndBanner .container .left h4 span {
+      color: #f69b37; }
+  #blogHeadingAndBanner .container .left p {
+    color: #93a1a7;
+    padding: 25px 0px;
+    line-height: 25px; }
+  #blogHeadingAndBanner .container .left ul {
+    padding-left: 80px; }
+    #blogHeadingAndBanner .container .left ul li {
+      font-size: 13px; }
+      #blogHeadingAndBanner .container .left ul li i {
+        margin-right: 10px;
+        color: #f69b37; }
+  #blogHeadingAndBanner .container .left .author {
+    width: 100%;
+    min-height: 191px;
+    background-color: #e5eef0;
+    padding: 30px 40px;
+    margin-top: 35px;
+    margin-bottom: 70px; }
+    #blogHeadingAndBanner .container .left .author img {
+      float: left;
+      margin-left: 20px;
+      margin-right: 40px; }
+    #blogHeadingAndBanner .container .left .author .madonna {
+      padding-top: 20px; }
+      #blogHeadingAndBanner .container .left .author .madonna p {
+        padding-bottom: 0; }
+      #blogHeadingAndBanner .container .left .author .madonna h3 {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+        text-transform: uppercase; }
+        #blogHeadingAndBanner .container .left .author .madonna h3 span {
+          color: #f69b37; }
+  #blogHeadingAndBanner .container .search input {
     border-right: none;
     text-transform: none; }
-  #blogBanner .container .search button {
+  #blogHeadingAndBanner .container .search button {
     background-color: #fff;
-    border: 1px solid #e7eaec;
+    border: 1px solid #29c2e1;
     border-left: none; }
-  #blogBanner .container .search img {
+  #blogHeadingAndBanner .container .search:hover input, #blogHeadingAndBanner .container .search:hover button {
+    border-color: #f69b37; }
+  #blogHeadingAndBanner .container .search img {
+    margin-top: 10px;
     width: 15px; }
-  #blogBanner .container h4 {
-    margin-left: 15px;
+  #blogHeadingAndBanner .container h4 {
+    margin: 0;
     margin-top: 40px;
     font-size: 18px; }
-  #blogBanner .container ul {
-    margin-left: 15px;
-    padding: 0; }
-    #blogBanner .container ul li {
+  #blogHeadingAndBanner .container ul {
+    margin: 0;
+    padding: 0 13px; }
+    #blogHeadingAndBanner .container ul li {
       list-style: none;
-      line-height: 40px;
+      line-height: 30px;
       text-transform: uppercase;
-      font-weight: bold; }
-      #blogBanner .container ul li a {
+      font-weight: bold;
+      padding: 5px 0; }
+      #blogHeadingAndBanner .container ul li a {
         display: block;
         color: #93a1a7;
         text-decoration: none;
         padding: 0 5px;
-        border-radius: 22px; }
-        #blogBanner .container ul li a:hover {
+        border-radius: 22px;
+        transition: all 0.4s ease; }
+        #blogHeadingAndBanner .container ul li a:hover {
           background-color: #29c2e1;
           color: #fff; }
-        #blogBanner .container ul li a i {
-          line-height: 40px;
+        #blogHeadingAndBanner .container ul li a i {
+          line-height: 30px;
           float: right; }
-
-#blogHeading .container .left h1, #blogHeading .container .left #slider .container-fluid .row h4, #slider .container-fluid .row #blogHeading .container .left h4 {
-  padding-left: 15px;
-  font-size: 28px;
-  font-weight: Bold; }
-#blogHeading .container .left h4 {
-  font-size: 15px;
-  padding-left: 16px;
-  font-weight: bold;
-  text-transform: uppercase; }
-  #blogHeading .container .left h4 span {
-    color: #f69b37; }
-#blogHeading .container .left p {
-  color: #93a1a7;
-  padding: 30px 16px; }
-#blogHeading .container .left ul {
-  padding-left: 100px; }
-  #blogHeading .container .left ul li {
-    font-size: 14px -1; }
-    #blogHeading .container .left ul li i {
-      margin-right: 10px;
-      color: #f69b37; }
-#blogHeading .container .left .author {
-  width: 845px;
-  height: 191px;
-  background-color: #e5eef0;
-  padding: 40px;
-  margin-top: 35px;
-  margin-bottom: 70px; }
-  #blogHeading .container .left .author img {
-    float: left;
-    margin-right: 40px; }
-  #blogHeading .container .left .author .madonna {
-    padding: 20px 0; }
-    #blogHeading .container .left .author .madonna h3 {
-      font-size: 15px;
-      padding: 0;
-      margin: 0;
-      font-weight: bold;
-      text-transform: uppercase; }
-      #blogHeading .container .left .author .madonna h3 span {
-        color: #f69b37; }
-#blogHeading .container .right {
-  padding-left: 50px; }
-  #blogHeading .container .right h4 {
+  #blogHeadingAndBanner .container .right h4 {
     padding: 15px; }
-  #blogHeading .container .right img {
+  #blogHeadingAndBanner .container .right img {
     float: left;
     margin-right: 25px;
     margin-bottom: 25px; }
-  #blogHeading .container .right span {
+  #blogHeadingAndBanner .container .right span {
     color: #f69b37; }
-  #blogHeading .container .right h5 {
+  #blogHeadingAndBanner .container .right h5 {
     font-weight: bold; }
-  #blogHeading .container .right p {
+  #blogHeadingAndBanner .container .right p {
     font-weight: bold; }
-  #blogHeading .container .right .business {
-    margin-left: 15; }
-    #blogHeading .container .right .business .busy, #blogHeading .container .right .business .idea, #blogHeading .container .right .business .lipsum, #blogHeading .container .right .business .featured, #blogHeading .container .right .business .post {
+  #blogHeadingAndBanner .container .right .business {
+    min-height: 100px;
+    padding: 0 15px 50px 15px; }
+    #blogHeadingAndBanner .container .right .business .busy, #blogHeadingAndBanner .container .right .business .idea, #blogHeadingAndBanner .container .right .business .lipsum, #blogHeadingAndBanner .container .right .business .featured, #blogHeadingAndBanner .container .right .business .post {
       width: 95px;
       height: 40px;
       background-color: #29c2e1;
       float: left;
       margin-right: 10px;
-      margin-bottom: 10px; }
-    #blogHeading .container .right .business .idea, #blogHeading .container .right .business .lipsum, #blogHeading .container .right .business .featured, #blogHeading .container .right .business .post {
+      margin-bottom: 10px;
+      transition: all 0.4s ease; }
+      #blogHeadingAndBanner .container .right .business .busy:hover, #blogHeadingAndBanner .container .right .business .idea:hover, #blogHeadingAndBanner .container .right .business .lipsum:hover, #blogHeadingAndBanner .container .right .business .featured:hover, #blogHeadingAndBanner .container .right .business .post:hover {
+        background-color: #f69b37;
+        transform: scale(1.05); }
+    #blogHeadingAndBanner .container .right .business .idea, #blogHeadingAndBanner .container .right .business .lipsum, #blogHeadingAndBanner .container .right .business .featured, #blogHeadingAndBanner .container .right .business .post {
       width: 50px;
       height: 40px; }
-    #blogHeading .container .right .business .lipsum {
+    #blogHeadingAndBanner .container .right .business .lipsum {
       width: 65px;
       height: 40px; }
-    #blogHeading .container .right .business .featured {
+    #blogHeadingAndBanner .container .right .business .featured {
       width: 109.555px;
       height: 40px; }
-    #blogHeading .container .right .business .post {
+    #blogHeadingAndBanner .container .right .business .post {
       width: 109.555px;
       height: 40px; }
-    #blogHeading .container .right .business h4 {
+    #blogHeadingAndBanner .container .right .business h4 {
+      margin: 10px 0;
       padding-left: 0; }
-    #blogHeading .container .right .business h6 {
+    #blogHeadingAndBanner .container .right .business h6 {
       color: #fff;
       font-weight: bold;
       font-size: 14px -1;
@@ -6052,12 +6080,15 @@ button.close {
   #comments .container h1, #comments .container #slider .container-fluid .row h4, #slider .container-fluid .row #comments .container h4 {
     font-size: 24px;
     text-transform: uppercase;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-left: 15px; }
   #comments .container .maxvell {
+    width: 100%;
     padding: 30px 0;
-    border-bottom: 2px solid #e7eaec; }
+    border-bottom: 1px solid #e7eaec; }
     #comments .container .maxvell img {
       float: left;
+      margin-left: 15px;
       margin-right: 20px; }
     #comments .container .maxvell h6 {
       font-size: 15px;
@@ -6067,7 +6098,10 @@ button.close {
       color: #f69b37;
       text-decoration: none;
       font-size: 15px;
-      font-weight: bold; }
+      font-weight: bold;
+      transition: all 0.3s ease; }
+      #comments .container .maxvell a:hover {
+        color: #29c2e1; }
     #comments .container .maxvell p {
       overflow: hidden;
       color: #93a1a7; }
@@ -6086,54 +6120,69 @@ button.close {
   border: none;
   background-color: #e5eef0;
   font-size: 14px -1px;
-  width: 405px;
+  width: 48.83%;
   height: 48px; }
+  #commentBox .container input:nth-child(even) {
+    margin: 0; }
 #commentBox .container textarea {
   margin: 8px;
   text-indent: 15px;
   border: none;
   background-color: #e5eef0;
   font-size: 14px -1px;
-  width: 830px;
+  width: 100%;
   height: 200px; }
 #commentBox .container button {
   background-color: #29c2e1;
   padding: 6px 25px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  transition: all 0.4s ease; }
+  #commentBox .container button:hover {
+    background-color: #f69b37; }
 
 #footer {
   position: relative; }
   #footer .container {
-    padding: 70px 0;
-    border-bottom: 2px solid #e7eaec; }
+    padding-top: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e7eaec; }
+    #footer .container .logos img {
+      margin-left: 10px;
+      margin-bottom: 15px; }
     #footer .container .menu ul {
       padding: 0px; }
       #footer .container .menu ul li {
         list-style: none;
         line-height: 25px;
         text-transform: uppercase; }
+        #footer .container .menu ul li:last-child {
+          margin-bottom: 20px; }
         #footer .container .menu ul li a {
           display: block;
           padding: 2px 10px;
           text-decoration: none;
           color: #93a1a7;
           border-radius: 15px;
-          font-size: 14px; }
+          font-size: 14px;
+          transition: all 0.3s ease; }
           #footer .container .menu ul li a:hover {
             background: #29c2e1;
             color: #fff; }
+            #footer .container .menu ul li a:hover span {
+              color: #fff; }
+            #footer .container .menu ul li a:hover i {
+              color: #fff; }
+              #footer .container .menu ul li a:hover i:hover {
+                color: #bdc6c9; }
           #footer .container .menu ul li a span {
             color: #23282f;
             font-size: 18px;
             text-transform: none; }
-        #footer .container .menu ul li i {
-          color: #93a1a7; }
-          #footer .container .menu ul li i:first-child {
-            margin-left: 10px; }
-          #footer .container .menu ul li i:hover {
-            color: #485459; }
     #footer .container .menu .g {
       margin-top: 30px; }
+    @media screen and (max-width: 480px), (min-width: 480px) and (max-width: 762px) {
+      #footer .container .menu .g {
+        margin-top: -10px; } }
     #footer .container .contact ul {
       padding: 0px; }
       #footer .container .contact ul li {
@@ -6141,7 +6190,10 @@ button.close {
         line-height: 29px;
         text-transform: uppercase;
         color: #93a1a7;
-        font-size: 14px; }
+        font-size: 14px;
+        padding: 0 10px; }
+        #footer .container .contact ul li:last-child {
+          margin-bottom: 20px; }
         #footer .container .contact ul li span {
           color: #23282f; }
         #footer .container .contact ul li .cont {
@@ -6152,6 +6204,7 @@ button.close {
       #footer .container .newsLetter ul li {
         list-style: none;
         line-height: 29px;
+        padding: 0 10px;
         color: #23282f;
         font-size: 18px; }
         #footer .container .newsLetter ul li:nth-child(2) {
@@ -6159,14 +6212,24 @@ button.close {
           color: #93a1a7;
           font-size: 14px;
           margin-bottom: 5px; }
+        #footer .container .newsLetter ul li:last-child {
+          margin-bottom: 20px; }
+      #footer .container .newsLetter ul .search {
+        margin-left: 10px; }
+        #footer .container .newsLetter ul .search:hover input, #footer .container .newsLetter ul .search:hover button {
+          transition: all 0.3s ease;
+          border-color: #f69b37; }
+        #footer .container .newsLetter ul .search:hover button {
+          transition: all 0.3s ease;
+          background-color: #f69b37; }
 
 .bord {
   width: 0px;
   height: 0px;
-  border-top: 160px solid transparent;
-  border-bottom: 160px solid #f69b37;
-  border-left: 220px solid #f69b37;
-  border-right: 220px solid transparent;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid #f69b37;
+  border-left: 140px solid #f69b37;
+  border-right: 140px solid transparent;
   position: absolute;
   bottom: 0;
   left: 0; }
@@ -6182,10 +6245,10 @@ button.close {
   #copyRight .bord2 {
     width: 0px;
     height: 0px;
-    border-top: 160px solid transparent;
-    border-bottom: 160px solid #29c2e1;
-    border-left: 220px solid transparent;
-    border-right: 220px solid #29c2e1;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #29c2e1;
+    border-left: 150px solid transparent;
+    border-right: 150px solid #29c2e1;
     position: absolute;
     bottom: 0;
     right: 0; }

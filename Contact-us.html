@@ -4,9 +4,6 @@
 		<title>Contact Us</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/Contact-us.css">
 		<link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.css">
-
-
-
 	</head>
 	<body>
 		<section id="contact">
@@ -38,21 +35,39 @@
 				<nav class="navbar navbar-default">
 					<div class="container">
 						<div class="navbar-header">
-							<div class="navbar-brand">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">
 								<img src="assets/images/Logo.png">
-							</div>
+							</a>
 						</div>
 						
-						<div class="main">
+						<div class="collapse navbar-collapse main " id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About us</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="#">Service</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Pages</a></li>
-								<li><a href="#">Contact us</a></li>
+								<li><a href="Home-page.html">Home</a></li>
+								<li><a href="About-us.html">About us</a></li>
+								<li><a href="News.html">News</a></li>
+								<li><a href="Portfolio.html">Portfolio</a></li>
+								<li><a href="Servicess.html">Service</a></li>
+								<li><a href="Blog.html">Blog</a></li>
+								<li class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									Pages
+									<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										<li><a href="Home-page-two.html">Home page two</a></li>
+										<li><a href="Blog-post.html">Blog post</a></li>
+										<li><a href="News-details.html">News-details</a></li>
+										<li><a href="Portfolio-two.html">Portfolio two</a></li>
+										<li><a href="Services-two.html">Services-two</a></li>
+									</ul>
+								</li>
+								<li><a href="Contact-us.html">Contact us</a></li>
 							</ul>
 						</div>
 					</div>
@@ -80,35 +95,34 @@
 						</div>
 					</div>
 					
-					<div class="col-md-4 col-sm-4 col-xs-12 text-center">
+					<div class="col-md-4 col-sm-4 col-xs-12 text-center pad">
 						<div class="phoneBoard">
 							<i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
 						</div>
 						<p>personal : +8799 879 7980</p>
 						<p>Office : 0477 224 55 22</p>
 					</div>
-					<div class="col-md-4 col-sm-4 col-xs-12 text-center">
+					<div class="col-md-4 col-sm-4 col-xs-12 text-center pad">
 						<div class="phoneBoard">
 							<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
 						</div>
-						<p>personal : +8799 879 7980</p>
-						<p>Office : 0477 224 55 22</p>
+						<p>Lipsum Street Nager</p>
+						<p>Hoysala Street Banglure 0900 Second floor</p>
 					</div>
-					<div class="col-md-4 col-sm-4 col-xs-12 text-center ">
+					<div class="col-md-4 col-sm-4 col-xs-12 text-center pad">
 						<div class="phoneBoard">
 							<i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
 						</div>
-						<p>personal : +8799 879 7980</p>
-						<p>Office : 0477 224 55 22</p>
+						<p>Info@businesssolution.com</p>
+						<p>Info@support.com</p>
 					</div>
 				</div>
 			</div>
 		</section>
-
 		<section id="commentBox2">
 			<div class="container text-center">
-				<div class="row">	
-					<h1>Contact form</h1>	
+				<div class="row">
+					<h1>Contact form</h1>
 				</div>
 				<div class="row">
 					<form>
@@ -116,7 +130,6 @@
 						<input type="email" name="" placeholder="EMAIL">
 						<input type="number" name="" placeholder="PHONE">
 						<input type="text" name="" placeholder="WEBSITE">
-
 						<textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
 					</form>
 				</div>
@@ -124,39 +137,39 @@
 			</div>
 		</section>
 		
-
 		<section id="footer">
-		<div class="container-fluid">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2 col-sm-4 col-xs-12">
-						<img src="assets/images/Logo.png">
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-12 menu">
-						<ul>
-							<li><a href="#"><span>Menu</span></a></li>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Portfolio</a></li>
-						</ul>
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-12 menu">	<ul>
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row logos">
+						<div class="col-md-2 col-sm-4 col-xs-12">
+							<img src="assets/images/Logo.png">
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-12 menu">
+							<ul>
+								<li><a href="#"><span>Menu</span></a></li>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Portfolio</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-12 menu">	<ul>
 							
 							<li class="g"><a href="#">Service</a></li>
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">Blog Pages</a></li>
-							<li>
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<i class="fa fa-google-plus" aria-hidden="true"></i>
+							<li><a href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+									<i class="fa fa-google-plus" aria-hidden="true"></i>
+								</a>
 							</li>
 						</ul></div>
-					<div class="col-md-3 col-sm-6 col-xs-12 contact">
-						<ul>
-							<li><span class="cont">Contact</span></li>
-							<li><span>Address :</span> Geethanjali street
-Second flor : 88569</li>
+						<div class="col-md-3 col-sm-6 col-xs-12 contact">
+							<ul>
+								<li><span class="cont">Contact</span></li>
+								<li><span>Address :</span> Geethanjali street
+							Second flor : 88569</li>
 							<li><span>Phone :</span> +988 9956 222</li>
 							
 							<li><span>Email :</span> info@business.com</li>
@@ -178,42 +191,16 @@ Second flor : 88569</li>
 					</div>
 				</div>
 			</div>
-
-
 			<div class="bord hidden-sm hidden-xs hidden-md"></div>
 		</div>
 	</section>
-
-
 	<section id="copyRight">
 		<div class="container">
 			<div class="row text-center">
 				<p>&copy; 2015 Businness LTD. Allright reserved</p>
 			</div>
 		</div>
-
 		<div class="bord2 hidden-sm hidden-xs hidden-md"></div>
 	</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	</body>
+</body>
 </html>

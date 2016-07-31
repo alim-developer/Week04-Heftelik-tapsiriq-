@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5816,7 +5817,7 @@ button.close {
 
 .button {
   padding: 8px 20px;
-  font-size: 14px +0.5;
+  font-size: 14.5px;
   border: none;
   border-radius: 22px;
   letter-spacing: 2px;
@@ -5851,9 +5852,10 @@ button.close {
     font-weight: bold;
     color: #93a1a7; }
 
+/* Home-page h1 ucun */
 #contact .container-fluid {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   background-color: #e5eef0; }
   #contact .container-fluid .clearFix {
     clear: both; }
@@ -5868,10 +5870,10 @@ button.close {
       float: right;
       color: #93a1a7;
       padding: 14px 0px;
-      padding-right: 28px; }
+      padding-right: 5%; }
       #contact .container-fluid ul li:first-child {
         padding-right: 0px;
-        padding-left: 28px;
+        padding-left: 5%;
         border-left: 1px solid #93a1a7; }
       #contact .container-fluid ul li i {
         font-size: 20px; }
@@ -5903,6 +5905,19 @@ button.close {
           #menu .container-fluid .navbar .container .main ul li a:hover {
             background-color: #29c2e1;
             color: #fff; }
+        #menu .container-fluid .navbar .container .main ul li button {
+          display: block;
+          color: #93a1a7;
+          padding: 6px 20px;
+          border: none;
+          text-transform: uppercase;
+          font-size: 14.5px;
+          font-weight: bold;
+          border-radius: 22px;
+          transition: all 0.5s ease; }
+          #menu .container-fluid .navbar .container .main ul li button:hover {
+            background-color: #29c2e1;
+            color: #fff; }
 
 #slider {
   margin-top: -20px; }
@@ -5910,6 +5925,7 @@ button.close {
     height: 310px;
     background-image: url(../images/slider.jpg);
     background-size: cover;
+    background-position: center;
     padding-top: 95px; }
     #slider .container-fluid .row h1, #slider .container-fluid .row h4 {
       font-size: 48px;
@@ -5924,7 +5940,7 @@ button.close {
 
 #location .container {
   padding: 70px 0;
-  border-bottom: 2px solid #e7eaec; }
+  border-bottom: 1px solid #e7eaec; }
   #location .container h1, #location .container #slider .container-fluid .row h4, #slider .container-fluid .row #location .container h4 {
     font-size: 28px;
     font-weight: Bold;
@@ -5944,7 +5960,7 @@ button.close {
     margin: 0;
     color: #8d8d8d;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase; }
   #location .container .phoneBoard {
     width: 66px;
@@ -5952,11 +5968,16 @@ button.close {
     border: 2px solid #29c2e1;
     border-radius: 50%;
     padding: 15px;
-    margin: 20 auto; }
+    margin: 20px auto;
+    transition: all 0.3s ease; }
+    #location .container .phoneBoard:hover {
+      border-color: #f69b37; }
+  #location .container .pad {
+    padding: 0px 40px; }
 
 #commentBox2 .container {
   padding: 80px 0;
-  border-bottom: 2px solid #e7eaec; }
+  border-bottom: 1px solid #e7eaec; }
   #commentBox2 .container h1, #commentBox2 .container #slider .container-fluid .row h4, #slider .container-fluid .row #commentBox2 .container h4 {
     font-size: 24px;
     text-transform: uppercase;
@@ -5978,45 +5999,59 @@ button.close {
     font-size: 14px -1px;
     width: 100%;
     height: 158px;
-    margin-left: 0; }
+    margin: 0;
+    margin-top: 8px; }
   #commentBox2 .container button {
     background-color: #29c2e1;
     padding: 8px 30px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    transition: all 0.4s ease; }
+    #commentBox2 .container button:hover {
+      background-color: #f69b37; }
 
 #footer {
   position: relative; }
   #footer .container {
-    padding: 70px 0;
-    border-bottom: 2px solid #e7eaec; }
+    padding-top: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e7eaec; }
+    #footer .container .logos img {
+      margin-left: 10px;
+      margin-bottom: 15px; }
     #footer .container .menu ul {
       padding: 0px; }
       #footer .container .menu ul li {
         list-style: none;
         line-height: 25px;
         text-transform: uppercase; }
+        #footer .container .menu ul li:last-child {
+          margin-bottom: 20px; }
         #footer .container .menu ul li a {
           display: block;
           padding: 2px 10px;
           text-decoration: none;
           color: #93a1a7;
           border-radius: 15px;
-          font-size: 14px; }
+          font-size: 14px;
+          transition: all 0.3s ease; }
           #footer .container .menu ul li a:hover {
             background: #29c2e1;
             color: #fff; }
+            #footer .container .menu ul li a:hover span {
+              color: #fff; }
+            #footer .container .menu ul li a:hover i {
+              color: #fff; }
+              #footer .container .menu ul li a:hover i:hover {
+                color: #bdc6c9; }
           #footer .container .menu ul li a span {
             color: #23282f;
             font-size: 18px;
             text-transform: none; }
-        #footer .container .menu ul li i {
-          color: #93a1a7; }
-          #footer .container .menu ul li i:first-child {
-            margin-left: 10px; }
-          #footer .container .menu ul li i:hover {
-            color: #485459; }
     #footer .container .menu .g {
       margin-top: 30px; }
+    @media screen and (max-width: 480px), (min-width: 480px) and (max-width: 762px) {
+      #footer .container .menu .g {
+        margin-top: -10px; } }
     #footer .container .contact ul {
       padding: 0px; }
       #footer .container .contact ul li {
@@ -6024,7 +6059,10 @@ button.close {
         line-height: 29px;
         text-transform: uppercase;
         color: #93a1a7;
-        font-size: 14px; }
+        font-size: 14px;
+        padding: 0 10px; }
+        #footer .container .contact ul li:last-child {
+          margin-bottom: 20px; }
         #footer .container .contact ul li span {
           color: #23282f; }
         #footer .container .contact ul li .cont {
@@ -6035,6 +6073,7 @@ button.close {
       #footer .container .newsLetter ul li {
         list-style: none;
         line-height: 29px;
+        padding: 0 10px;
         color: #23282f;
         font-size: 18px; }
         #footer .container .newsLetter ul li:nth-child(2) {
@@ -6042,14 +6081,24 @@ button.close {
           color: #93a1a7;
           font-size: 14px;
           margin-bottom: 5px; }
+        #footer .container .newsLetter ul li:last-child {
+          margin-bottom: 20px; }
+      #footer .container .newsLetter ul .search {
+        margin-left: 10px; }
+        #footer .container .newsLetter ul .search:hover input, #footer .container .newsLetter ul .search:hover button {
+          transition: all 0.3s ease;
+          border-color: #f69b37; }
+        #footer .container .newsLetter ul .search:hover button {
+          transition: all 0.3s ease;
+          background-color: #f69b37; }
 
 .bord {
   width: 0px;
   height: 0px;
-  border-top: 160px solid transparent;
-  border-bottom: 160px solid #f69b37;
-  border-left: 220px solid #f69b37;
-  border-right: 220px solid transparent;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid #f69b37;
+  border-left: 140px solid #f69b37;
+  border-right: 140px solid transparent;
   position: absolute;
   bottom: 0;
   left: 0; }
@@ -6065,10 +6114,10 @@ button.close {
   #copyRight .bord2 {
     width: 0px;
     height: 0px;
-    border-top: 160px solid transparent;
-    border-bottom: 160px solid #29c2e1;
-    border-left: 220px solid transparent;
-    border-right: 220px solid #29c2e1;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #29c2e1;
+    border-left: 150px solid transparent;
+    border-right: 150px solid #29c2e1;
     position: absolute;
     bottom: 0;
     right: 0; }

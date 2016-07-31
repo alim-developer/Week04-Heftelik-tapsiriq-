@@ -41,6 +41,7 @@
 				margin-right: 30px;
 				margin-bottom: 80px;
 				float:left;
+				transition: all 0.4s ease;
 				&:hover{
 					background-color: $colorOrange;
 				}
@@ -60,11 +61,14 @@
 				font-size: $font-size;
 			}
 		
-		.button{
-			margin-top: 20px;
-			background-color: $colorBlue;
-
-		}
+			.button{
+				margin-top: 20px;
+				background-color: $colorBlue;
+				transition: all 0.4s ease;
+				&:hover{
+					background-color: $colorOrange;
+				}
+			}
 		}
 	}
 }
